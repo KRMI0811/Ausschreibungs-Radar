@@ -1,8 +1,12 @@
 """Modellunabhängige Anbindung an ein Sprachmodell.
 
-Genutzt wird die OpenAI-kompatible Schnittstelle /v1/chat/completions. Sie wird
-von Public AI (Apertus), Azure OpenAI, OpenAI, Mistral und vielen anderen
-angeboten. Ein Wechsel erfordert nur andere Umgebungsvariablen:
+Zwei Schnittstellen werden unterstützt:
+* Claude (Anthropic): wird automatisch erkannt, wenn der Schlüssel mit "sk-ant-"
+  beginnt. Dann genügt LLM_API_KEY, Standardmodell ist claude-haiku-5-5.
+* OpenAI-kompatibel (/v1/chat/completions): Public AI (Apertus), Azure OpenAI,
+  OpenAI, Mistral und viele andere.
+
+Ein Wechsel erfordert nur andere Umgebungsvariablen:
 
     LLM_BASE_URL   z. B. https://api.publicai.co/v1
     LLM_API_KEY    geheimer Schlüssel (als GitHub Secret hinterlegen)
@@ -28,51 +32,102 @@ log = logging.getLogger(__name__)
 
 STANDARD_BASE_URL = "https://api.publicai.co/v1"
 STANDARD_MODELL = "swiss-ai/apertus-v1.5-70b"
+ANTHROPIC_BASE_URL = "https://api.anthropic.com/v1"
+ANTHROPIC_MODELL = "claude-haiku-5-5"
 
 
 class LLMNichtKonfiguriert(RuntimeError):
     pass
 
 
+HINWEISE = {
+    401: "Schlüssel ungültig (401). Bitte LLM_API_KEY prüfen.",
+    400: "Anfrage abgelehnt (400). Häufig: Modellname passt nicht zum Anbieter oder Guthaben fehlt.",
+    402: "Kein Guthaben bzw. kein passendes Abo beim Anbieter (402 Payment Required).",
+    403: "Zugriff verweigert (403). Schlüssel oder Modell nicht freigeschaltet.",
+    404: "Modell oder Adresse nicht gefunden (404). LLM_MODEL bzw. LLM_BASE_URL prüfen.",
+}
+
+
 class LLM:
     def __init__(self) -> None:
-        self.base_url = (env("LLM_BASE_URL", STANDARD_BASE_URL) or "").rstrip("/")
-        self.api_key = env("LLM_API_KEY")
-        self.modell = env("LLM_MODEL", STANDARD_MODELL)
+        self.api_key = (env("LLM_API_KEY") or "").strip() or None
+        self.anthropic = bool(self.api_key and self.api_key.startswith("sk-ant-")) or "anthropic.com" in (
+            env("LLM_BASE_URL") or "")
+        if self.anthropic:
+            self.base_url = (env("LLM_BASE_URL", ANTHROPIC_BASE_URL) or "").rstrip("/")
+            modell = env("LLM_MODEL")
+            # ein noch gesetztes Apertus-Modell passt nicht zu einem Claude-Schlüssel
+            self.modell = modell if modell and modell.startswith("claude") else ANTHROPIC_MODELL
+        else:
+            self.base_url = (env("LLM_BASE_URL", STANDARD_BASE_URL) or "").rstrip("/")
+            self.modell = env("LLM_MODEL", STANDARD_MODELL)
         self.timeout = float(env("LLM_TIMEOUT", "120") or 120)
         self.aufrufe = 0
         self.tokens = 0
+        self.gesperrt: str | None = None  # Grund, falls der Anbieter dauerhaft ablehnt
 
     @property
     def verfuegbar(self) -> bool:
-        return bool(self.api_key)
+        return bool(self.api_key) and not self.gesperrt
 
     def chat(self, system: str, nutzer: str, zweck: str, max_tokens: int = 1400) -> str:
         if not self.api_key:
             raise LLMNichtKonfiguriert("LLM_API_KEY fehlt")
-        url = f"{self.base_url}/chat/completions"
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json",
-            "User-Agent": USER_AGENT,  # Public AI verlangt einen User-Agent
-        }
-        nutzlast = {
-            "model": self.modell,
-            "messages": [{"role": "system", "content": system}, {"role": "user", "content": nutzer}],
-            "temperature": 0.1,
-            "max_tokens": max_tokens,
-        }
+        if self.gesperrt:
+            raise LLMNichtKonfiguriert(self.gesperrt)
+        if self.anthropic:
+            # Claude Messages API. Keine temperature: neuere Claude-Modelle lehnen Werte unter 1 ab.
+            # Mehr max_tokens, weil adaptives Nachdenken mitzählt.
+            url = f"{self.base_url}/messages"
+            headers = {
+                "x-api-key": self.api_key,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+                "User-Agent": USER_AGENT,
+            }
+            nutzlast = {
+                "model": self.modell,
+                "max_tokens": max(max_tokens * 3, 4000),
+                "system": system,
+                "messages": [{"role": "user", "content": nutzer}],
+            }
+        else:
+            url = f"{self.base_url}/chat/completions"
+            headers = {
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json",
+                "User-Agent": USER_AGENT,  # Public AI verlangt einen User-Agent
+            }
+            nutzlast = {
+                "model": self.modell,
+                "messages": [{"role": "system", "content": system}, {"role": "user", "content": nutzer}],
+                "temperature": 0.1,
+                "max_tokens": max_tokens,
+            }
         fehler: Exception | None = None
         for versuch in range(3):
             try:
                 t0 = time.time()
                 r = requests.post(url, headers=headers, json=nutzlast, timeout=self.timeout)
+                if 400 <= r.status_code < 500 and r.status_code != 429:
+                    # Dauerhafte Ablehnung: nicht wiederholen und für den Rest des Laufs abschalten
+                    self.gesperrt = HINWEISE.get(r.status_code, f"Anbieter lehnt ab ({r.status_code}): {r.text[:150]}")
+                    log.warning("Sprachmodell abgeschaltet: %s", self.gesperrt)
+                    raise LLMNichtKonfiguriert(self.gesperrt)
                 if r.status_code in (429, 500, 502, 503, 504):
                     raise requests.HTTPError(f"HTTP {r.status_code}: {r.text[:200]}", response=r)
                 r.raise_for_status()
                 daten = r.json()
-                antwort = daten["choices"][0]["message"]["content"] or ""
-                self._protokolliere(daten.get("usage") or {}, zweck, time.time() - t0)
+                if self.anthropic:
+                    antwort = "".join(b.get("text", "") for b in daten.get("content") or [] if b.get("type") == "text")
+                    u = daten.get("usage") or {}
+                    usage = {"prompt_tokens": u.get("input_tokens"), "completion_tokens": u.get("output_tokens"),
+                             "total_tokens": (u.get("input_tokens") or 0) + (u.get("output_tokens") or 0)}
+                else:
+                    antwort = daten["choices"][0]["message"]["content"] or ""
+                    usage = daten.get("usage") or {}
+                self._protokolliere(usage, zweck, time.time() - t0)
                 return antwort
             except (requests.RequestException, KeyError, ValueError) as e:
                 fehler = e

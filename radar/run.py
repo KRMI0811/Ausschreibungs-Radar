@@ -52,6 +52,11 @@ def _bewerte(llm: LLM, e: dict[str, Any], prof: dict[str, Any], fehler: list[str
         e["bewertet_mit"] = llm.modell
         e["bewertet_am"] = jetzt_iso()
     except Exception as ex:  # ein einzelner Fehler soll den Lauf nicht stoppen
+        if llm.gesperrt:
+            hinweis = f"Sprachmodell nicht verfügbar: {llm.gesperrt} Treffer wurden nur nach Stichworten eingeordnet."
+            if hinweis not in fehler:
+                fehler.append(hinweis)
+            return
         fehler.append(f"Bewertung '{e.get('titel', '')[:60]}': {ex}")
         log.warning("Bewertung fehlgeschlagen: %s", ex)
 
