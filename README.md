@@ -1,4 +1,4 @@
-# Ausschreibungsradar IOL
+# Findus · Der Ausschreibungsradar des IOL
 
 Prototyp eines Agenten, der für das IOL der OST täglich passende Ausschreibungen
 sucht, verständlich zusammenfasst, bewertet und per E-Mail oder Microsoft Teams
@@ -91,6 +91,30 @@ Ab dann läuft das Radar täglich automatisch.
 3. Apps aus privaten Repositories sind zunächst nur für Sie sichtbar. Über
    *Share* laden Sie Kolleginnen und Kollegen per E-Mail ein. Auf Community
    Cloud ist pro Konto nur **eine** private App möglich.
+
+### 6. Secrets der App (Passwort und Suchknopf)
+
+In Streamlit bei der App *Settings → Secrets* öffnen und einfügen:
+
+```toml
+APP_PASSWORT = "IhrPasswort"
+GITHUB_TOKEN = "github_pat_..."
+GITHUB_REPO = "IhrKonto/iol-ausschreibungsradar"
+GITHUB_BRANCH = "main"
+```
+
+* `APP_PASSWORT` schützt die App. Ohne Eintrag ist sie ohne Passwort erreichbar.
+* `GITHUB_TOKEN` und `GITHUB_REPO` aktivieren den Knopf **Suche jetzt starten**
+  und sorgen dafür, dass die App immer den neuesten Datenstand direkt aus
+  GitHub liest. Token erstellen auf GitHub unter *Settings → Developer settings
+  → Personal access tokens → Fine-grained tokens → Generate new token*:
+  * *Repository access*: Only select repositories, dieses Repository
+  * *Permissions → Repository permissions*: **Actions** Read and write,
+    **Contents** Read-only
+  * Ablaufdatum setzen (z. B. 1 Jahr) und im Kalender vormerken.
+
+Eine über den Knopf gestartete Suche verschickt wie der tägliche Lauf
+Benachrichtigungen für neue Treffer. So geht keine Meldung verloren.
 
 Lokal geht es auch: `pip install -r requirements.txt` und `streamlit run app.py`.
 
