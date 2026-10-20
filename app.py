@@ -236,12 +236,48 @@ def _stand(ordner: Path) -> str:
         return ""
 
 
+def _json(pfad: Path, leer):
+    try:
+        return json.loads(pfad.read_text(encoding="utf-8"))
+    except Exception:
+        return leer
+
+
 def synchronisiere() -> None:
+    """Übernimmt einen neueren Stand aus dem Repository. Treffer, die nur eine
+    Suche aus der App gefunden hat, bleiben dabei erhalten."""
     ARBEIT.mkdir(parents=True, exist_ok=True)
-    if _stand(REPO_DATEN) > _stand(ARBEIT):
-        for name in DATEIEN:
-            if (REPO_DATEN / name).exists():
-                shutil.copy2(REPO_DATEN / name, ARBEIT / name)
+    if _stand(REPO_DATEN) <= _stand(ARBEIT):
+        return
+    eigene = {e["id"]: e for e in _json(ARBEIT / "ausschreibungen.json", [])}
+    for name in DATEIEN:
+        if (REPO_DATEN / name).exists():
+            shutil.copy2(REPO_DATEN / name, ARBEIT / name)
+    repo = {e["id"]: e for e in _json(ARBEIT / "ausschreibungen.json", [])}
+    for eid, e in eigene.items():
+        repo.setdefault(eid, e)
+    (ARBEIT / "ausschreibungen.json").write_text(json.dumps(list(repo.values()), ensure_ascii=False), encoding="utf-8")
+
+
+def suchzeitraum() -> int:
+    """Tage, die eine Suche aus der App zurückschaut. Beim ersten Mal und nach
+    einer Änderung der Filterlogik 30 Tage, sonst seit der letzten Suche."""
+    from radar import vorfilter
+
+    pfad = ARBEIT / "quellen_status.json"
+    status = _json(pfad, {})
+    version = getattr(vorfilter, "VERSION", 1)
+    letzte = status.get("simap_letzter_lauf")
+    if status.get("findus_filterversion") != version:
+        # neue Filterlogik: bereits verworfene Projekte nochmals prüfen
+        status.pop("simap_gesehen", None)
+        status["findus_filterversion"] = version
+        pfad.write_text(json.dumps(status, ensure_ascii=False), encoding="utf-8")
+        return 30
+    if not letzte:
+        return 30
+    seit = (datetime.now(timezone.utc) - datetime.fromisoformat(letzte)).days
+    return max(7, min(30, seit + 2))
 
 
 @st.cache_data(ttl=60)
@@ -279,11 +315,11 @@ def suche_starten() -> None:
             os.environ["LLM_API_KEY"] = secret("LLM_API_KEY")
         from radar import run
 
-        with st.status("Findus sucht … das dauert meist 2 bis 8 Minuten.", expanded=True) as box:
+        with st.status("Findus sucht … das kann einige Minuten dauern, beim ersten Mal bis zu 15 Minuten.", expanded=True) as box:
             handler = _AnzeigeHandler(box)
             logging.getLogger().addHandler(handler)
             try:
-                run.main(["--ohne-versand", "--tage", "7"])
+                run.main(["--ohne-versand", "--tage", str(suchzeitraum())])
                 box.update(label="Suche abgeschlossen", state="complete", expanded=False)
             except Exception as ex:
                 box.update(label=f"Suche mit Fehler beendet: {ex}", state="error")
@@ -503,7 +539,7 @@ for e in daten:
         continue
     if art == ARTEN[1] and not (e["gefaess"] == "forschung" and passend):
         continue
-    if art == ARTEN[2] and (passend or relevanz < 30):
+    if art == ARTEN[2] and (passend or relevanz < 15):
         continue
     liste.append((e, themen, relevanz, bewertet))
 liste.sort(key=lambda x: (-x[2], tage_bis(x[0].get("frist")) or 999))
