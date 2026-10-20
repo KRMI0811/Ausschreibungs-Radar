@@ -64,6 +64,83 @@ def rahmenfaktoren(e: dict[str, Any], profil: dict[str, Any]) -> list[str]:
     return f
 
 
+SPRACHEN = {"de": "Deutsch", "fr": "Französisch", "it": "Italienisch", "en": "Englisch", "rm": "Rätoromanisch"}
+
+
+def aufwand_steckbrief(e: dict[str, Any]) -> dict[str, Any]:
+    """Regelbasierte Aufwandsanalyse aus den standardisierten simap-Feldern.
+
+    Jeder Punkt ist nachvollziehbar begründet. Ergebnis:
+    {"stufe": "gering|mittel|hoch", "punkte": int, "gruende": [...], "fakten": [...]}
+    """
+    sb = e.get("steckbrief") or {}
+    kriterien_text = " ".join((e.get("eignungskriterien") or []) + (e.get("zuschlagskriterien") or [])).lower()
+    alles = (kriterien_text + " " + (e.get("text") or "")).lower()
+    punkte = 0
+    gruende: list[str] = []
+    fakten: list[str] = []
+
+    def plus(n: int, grund: str) -> None:
+        nonlocal punkte
+        punkte += n
+        gruende.append(grund)
+
+    n_eig = len(e.get("eignungskriterien") or [])
+    n_zus = len(e.get("zuschlagskriterien") or [])
+    if n_eig:
+        fakten.append(f"{n_eig} Eignungskriterien")
+    if n_zus:
+        fakten.append(f"{n_zus} Zuschlagskriterien")
+    if n_eig >= 4:
+        plus(2, f"viele Eignungsnachweise ({n_eig})")
+    elif n_eig >= 2:
+        plus(1, f"mehrere Eignungsnachweise ({n_eig})")
+    if n_zus >= 5:
+        plus(1, f"viele Zuschlagskriterien ({n_zus})")
+    referenzen = alles.count("referenz")
+    if referenzen:
+        plus(2 if referenzen >= 3 else 1, "Referenzprojekte verlangt")
+    if any(w in alles for w in ("iso 9001", "iso-", "zertifiz")):
+        plus(2, "Zertifizierung verlangt")
+    if any(w in alles for w in ("schlüsselperson", "projektleit", "lebenslauf", "cv ", "qualifikation der")):
+        plus(2, "Schlüsselpersonen mit Nachweisen")
+    if any(w in alles for w in ("konzept", "lösungsvorschlag", "vorgehensvorschlag", "methodik", "umsetzungsvorschlag")):
+        plus(2, "eigenes Konzept bzw. Vorgehensvorschlag")
+    if any(w in alles for w in ("präsentation", "interview", "anhörung", "offertpräsentation")):
+        plus(2, "Präsentation oder Interview")
+    sprachen = [SPRACHEN.get(x, x) for x in sb.get("angebotssprachen") or []]
+    if sprachen:
+        fakten.append("Angebotssprache: " + ", ".join(sprachen))
+    if len(sprachen) == 1 and sprachen[0] != "Deutsch":
+        plus(2, f"Angebot nur auf {sprachen[0]}")
+    if sb.get("verfahren_code") == "selective":
+        plus(2, "zweistufiges Verfahren (Präqualifikation)")
+    if sb.get("dialog") == "yes":
+        plus(2, "Dialogverfahren")
+    if (sb.get("anzahl_lose") or 0) > 1:
+        fakten.append(f"{sb['anzahl_lose']} Lose")
+        plus(1, "mehrere Lose")
+    if sb.get("begehung") and "keine" not in sb["begehung"].lower():
+        plus(1, "Begehung bzw. Informationsveranstaltung")
+    pg = e.get("preisgewicht")
+    if isinstance(pg, (int, float)):
+        fakten.append(f"Preis zählt {pg} %")
+    zeitraum = sb.get("vertragsbeginn_ende")
+    if isinstance(zeitraum, list) and len(zeitraum) == 2 and all(zeitraum):
+        fakten.append(f"Vertragsdauer {zeitraum[0]} bis {zeitraum[1]}")
+    if sb.get("verlaengerung") == "yes":
+        fakten.append("Verlängerung möglich")
+    if sb.get("subunternehmer_erlaubt") == "yes" or e.get("arge_erlaubt") == "yes":
+        fakten.append("Partner bzw. Bietergemeinschaft möglich")
+    if e.get("kriterien_in_unterlagen"):
+        plus(1, "Kriterien nur in den Unterlagen, Download nötig")
+
+    stufe = "gering" if punkte <= 3 else ("mittel" if punkte <= 7 else "hoch")
+    if not e.get("details_geladen") and not e.get("steckbrief"):
+        stufe = None  # keine strukturierten Daten (z. B. Förderausschreibung)
+    return {"stufe": stufe, "punkte": punkte, "gruende": gruende, "fakten": fakten}
+
+
 SYSTEM_DIENSTLEISTUNG = """Du bist eine erfahrene Akquise-Fachperson eines Hochschulinstituts in der Schweiz.
 Du beurteilst öffentliche Ausschreibungen nüchtern und ehrlich. Du erfindest keine Fakten.
 Wenn eine Angabe im Text fehlt, schreibst du "nicht angegeben".
@@ -173,6 +250,9 @@ def _liste(x: list[str] | None, leer: str = "nicht angegeben") -> str:
 
 def bewerte_dienstleistung(llm: LLM, e: dict[str, Any], profil: dict[str, Any]) -> dict[str, Any]:
     faktoren = rahmenfaktoren(e, profil)
+    aw = aufwand_steckbrief(e)
+    if aw["gruende"]:
+        faktoren.append("Aufwandstreiber laut simap: " + ", ".join(aw["gruende"]))
     prompt = AUFGABE_DIENSTLEISTUNG.format(
         profil=_profil_text(profil),
         titel=e.get("titel"),

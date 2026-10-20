@@ -85,14 +85,18 @@ class SimapClient:
         auftragsarten: list[str],
         publikationsarten: list[str],
         max_seiten: int = 60,
+        suchbegriff: str | None = None,
     ) -> Iterator[dict[str, Any]]:
-        """Liefert alle Projekte, deren neueste Publikation im Zeitraum liegt."""
+        """Liefert alle Projekte, deren neueste Publikation im Zeitraum liegt.
+        Mit suchbegriff nutzt Findus die Volltextsuche von simap."""
         params: dict[str, Any] = {
             "lang": "de",
             "projectSubTypes": auftragsarten,
             "newestPubTypes": publikationsarten,
             "newestPublicationFrom": (heute() - timedelta(days=tage_zurueck)).isoformat(),
         }
+        if suchbegriff:
+            params["search"] = suchbegriff
         letztes = None
         for _ in range(max_seiten):
             if letztes:
@@ -192,4 +196,22 @@ def normalisiere(treffer: dict[str, Any], details: dict[str, Any] | None, web_li
         or kriterien.get("qualificationCriteriaInDocuments") == "yes",
         "arge_erlaubt": (d.get("terms") or {}).get("consortiumAllowed"),
         "details_geladen": bool(details),
+        # Steckbrief für die Aufwandsanalyse (standardisierte simap-Felder)
+        "steckbrief": {
+            "angebotssprachen": info.get("offerLanguages") or [],
+            "eingabeart": info.get("offerTypes") or [],
+            "dialog": info.get("dialog"),
+            "vertragsbeginn_ende": ((beschaffung.get("contractPeriod") or {}).get("dateRange")
+                                    or (beschaffung.get("executionPeriod") or {}).get("dateRange")),
+            "verlaengerung": beschaffung.get("canContractBeExtended"),
+            "optionen": beschaffung.get("options"),
+            "varianten": beschaffung.get("variants"),
+            "teilangebote": beschaffung.get("partialOffers"),
+            "begehung": html_zu_text(mehrsprachig((d.get("terms") or {}).get("walkThroughNotes")))[:300],
+            "angebotsgueltigkeit_tage": termine.get("offerValidityDeadlineDays"),
+            "unterlagen_kostenpflichtig": info.get("documentsWithCosts"),
+            "anzahl_lose": len(treffer.get("lots") or []),
+            "subunternehmer_erlaubt": (d.get("terms") or {}).get("subContractorAllowed"),
+            "verfahren_code": treffer.get("processType"),
+        },
     }

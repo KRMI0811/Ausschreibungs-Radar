@@ -56,62 +56,129 @@ def _bewerte(llm: LLM, e: dict[str, Any], prof: dict[str, Any], fehler: list[str
 
 # ---------------------------------------------------------------- simap
 
+# Zu allgemeine Begriffe liefern in der simap-Volltextsuche zu viel Rauschen
+SUCH_STOPP = {"personal", "digital", "zusammenarbeit", "change", "kader", "esg", "coaching", "teilzeit",
+              "assessment", "compliance", "leitbild", "fachkräfte", "human resources"}
+# Zusätzliche Suchbegriffe, die in Titeln öffentlicher Ausschreibungen häufig vorkommen
+SUCH_ZUSATZ = ["HR-Dienstleistungen", "HR-Beratung", "Personaldienstleistungen", "Personalberatung",
+               "Organisationsberatung", "Beratungsleistungen", "Beratungsmandat", "Führungsausbildung",
+               "Kaderentwicklung", "Weiterbildung", "Evaluation", "Mitarbeitendenbefragung", "Personalgewinnung"]
+SUCH_TAGE = 150        # Volltextsuche: Projekte der letzten 150 Tage, entscheidend ist danach die Frist
+MIN_DETAILABRUFE = 1000
+
+
+def suchbegriffe(prof: dict[str, Any]) -> list[str]:
+    begriffe: list[str] = []
+    for liste in (prof.get("kernthemen") or {}).values():
+        for b in liste:
+            t = b.strip().strip("-").strip()
+            if len(t) >= 4 and t.lower() not in SUCH_STOPP:
+                begriffe.append(t)
+    begriffe += list(prof.get("simap_suchbegriffe") or []) + SUCH_ZUSATZ
+    eindeutig: dict[str, str] = {}
+    for b in begriffe:
+        eindeutig.setdefault(b.lower(), b)
+    return list(eindeutig.values())
+
+
 def lauf_simap(eintraege, status, prof, cfg, llm, tage_override, fehler) -> list[str]:
+    """Findet alle noch offenen, passenden Ausschreibungen.
+
+    Zwei Wege ergänzen sich:
+    1. Volltextsuche auf simap mit allen Kernbegriffen über die letzten 150 Tage.
+       Damit werden auch Ausschreibungen gefunden, die schon länger publiziert,
+       aber noch offen sind.
+    2. Durchsicht aller neuen Dienstleistungen der letzten Tage, damit auch
+       Ausschreibungen mit unscheinbarem Titel nicht verloren gehen.
+    Massgeblich ist danach die Eingabefrist: Abgelaufenes wird verworfen.
+    """
     neu_ids: list[str] = []
     gesehen: dict[str, str] = status.setdefault("simap_gesehen", {})
     erstlauf = not status.get("simap_letzter_lauf")
     tage = tage_override or (cfg.get("tage_zurueck_erstlauf", 21) if erstlauf else cfg.get("tage_zurueck", 4))
     client = SimapClient(cfg["basis_url"], pause=float(cfg.get("pause_sekunden", 0.4)))
     min_score = int((prof.get("schwellen") or {}).get("vorfilter_min", 3))
-    abrufe = 0
-    gefunden = 0
+    max_abrufe = max(int(cfg.get("max_detailabrufe", 0)), MIN_DETAILABRUFE)
+    abrufe = verworfen_frist = 0
+
+    # 1. Kandidaten sammeln, Stichworttreffer zuerst
+    kandidaten: dict[str, dict[str, Any]] = {}
+    begriffe = suchbegriffe(prof)
+    fehlgeschlagen: list[str] = []
+    for begriff in begriffe:
+        try:
+            for t in client.suche(SUCH_TAGE, cfg["auftragsarten"], cfg["publikationsarten"],
+                                  max_seiten=5, suchbegriff=begriff):
+                kandidaten.setdefault(t["id"], t)
+        except Exception as ex:
+            fehlgeschlagen.append(begriff)
+            log.info("simap Suche '%s' fehlgeschlagen: %s", begriff, ex)
+    if fehlgeschlagen:
+        fehler.append(f"simap: Suche für {len(fehlgeschlagen)} von {len(begriffe)} Begriffen fehlgeschlagen "
+                      f"(z. B. {', '.join(fehlgeschlagen[:3])})")
+    stichwort = len(kandidaten)
     try:
-        for treffer in client.suche(tage, cfg["auftragsarten"], cfg["publikationsarten"]):
-            gefunden += 1
-            pid, pubid = treffer["id"], treffer.get("publicationId")
-            eid = f"simap:{pid}"
-            if gesehen.get(pid) == pubid:
-                if eid in eintraege:
-                    eintraege[eid]["zuletzt_gesehen"] = jetzt_iso()
-                continue
-            if abrufe >= int(cfg.get("max_detailabrufe", 400)):
-                fehler.append("simap: maximale Zahl an Detailabrufen erreicht, Rest folgt im nächsten Lauf")
-                break
-            try:
-                details = client.details(pid, pubid) if pubid else None
-                abrufe += 1
-            except Exception as ex:
-                fehler.append(f"simap Details {treffer.get('projectNumber')}: {ex}")
-                continue
-            e = normalisiere(treffer, details, cfg["web_link"])
-            punkte, themen, ausschluss = vorfilter.bewerte(e, prof)
-            gesehen[pid] = pubid
-            if punkte < min_score:
-                continue  # irrelevant, nur als gesehen merken
-            alt = eintraege.get(eid)
-            e["vorfilter_score"], e["vorfilter_themen"] = punkte, themen
-            e["erstmals_gefunden"] = (alt or {}).get("erstmals_gefunden") or jetzt_iso()
-            e["zuletzt_gesehen"] = jetzt_iso()
-            e["gemeldet"] = (alt or {}).get("gemeldet", False)
-            e["erinnert"] = (alt or {}).get("erinnert", [])
-            if alt and alt.get("bewertung") and alt.get("publikationsart_code") == e.get("publikationsart_code"):
-                e["bewertung"] = alt["bewertung"]  # nur Korrektur, keine neue Bewertung nötig
-            else:
-                _bewerte(llm, e, prof, fehler)
-                if alt and alt.get("publikationsart_code") != e.get("publikationsart_code"):
-                    e["gemeldet"] = False  # z. B. aus Vorankündigung wurde Ausschreibung
-            eintraege[eid] = e
-            neu_ids.append(eid)
+        for t in client.suche(tage, cfg["auftragsarten"], cfg["publikationsarten"]):
+            kandidaten.setdefault(t["id"], t)
     except Exception as ex:
-        fehler.append(f"simap: {ex}")
-        log.exception("simap-Lauf abgebrochen")
-    # Gesehen-Liste begrenzen
+        fehler.append(f"simap Datumssuche: {ex}")
+    log.info("simap: %s Projekte gefunden (%s über %s Suchbegriffe, Rest aus den letzten %s Tagen)",
+             len(kandidaten), stichwort, len(begriffe), tage)
+
+    # 2. Details laden, nach Frist und Vorfilter entscheiden
+    for treffer in kandidaten.values():
+        pid, pubid = treffer["id"], treffer.get("publicationId")
+        eid = f"simap:{pid}"
+        if gesehen.get(pid) == pubid:
+            if eid in eintraege:
+                eintraege[eid]["zuletzt_gesehen"] = jetzt_iso()
+            continue
+        if abrufe >= max_abrufe:
+            fehler.append("simap: maximale Zahl an Detailabrufen erreicht, Rest folgt im nächsten Lauf")
+            break
+        try:
+            details = client.details(pid, pubid) if pubid else None
+            abrufe += 1
+        except Exception as ex:
+            fehler.append(f"simap Details {treffer.get('projectNumber')}: {ex}")
+            continue
+        e = normalisiere(treffer, details, cfg["web_link"])
+        gesehen[pid] = pubid
+        rest = tage_bis(e.get("frist"))
+        if rest is not None and rest < 0:
+            verworfen_frist += 1
+            continue  # Eingabefrist abgelaufen
+        if rest is None and (tage_bis(e.get("publiziert_am")) or 0) < -120:
+            verworfen_frist += 1
+            continue  # ohne Frist und älter als vier Monate
+        punkte, themen, ausschluss = vorfilter.bewerte(e, prof)
+        if punkte < min_score:
+            continue
+        alt = eintraege.get(eid)
+        e["vorfilter_score"], e["vorfilter_themen"] = punkte, themen
+        e["erstmals_gefunden"] = (alt or {}).get("erstmals_gefunden") or jetzt_iso()
+        e["zuletzt_gesehen"] = jetzt_iso()
+        e["gemeldet"] = (alt or {}).get("gemeldet", False)
+        e["erinnert"] = (alt or {}).get("erinnert", [])
+        if alt and alt.get("bewertung") and alt.get("publikationsart_code") == e.get("publikationsart_code"):
+            e["bewertung"] = alt["bewertung"]
+        else:
+            _bewerte(llm, e, prof, fehler)
+            if alt and alt.get("publikationsart_code") != e.get("publikationsart_code"):
+                e["gemeldet"] = False  # z. B. aus Vorankündigung wurde Ausschreibung
+        eintraege[eid] = e
+        neu_ids.append(eid)
+
     if len(gesehen) > MAX_GESEHEN:
         for k in list(gesehen)[: len(gesehen) - MAX_GESEHEN]:
             del gesehen[k]
     status["simap_letzter_lauf"] = jetzt_iso()
-    status["simap_letzte_statistik"] = {"treffer": gefunden, "detailabrufe": abrufe, "relevant_vorfilter": len(neu_ids)}
-    log.info("simap: %s Projekte im Zeitraum, %s Details geladen, %s im Vorfilter", gefunden, abrufe, len(neu_ids))
+    status["simap_letzte_statistik"] = {
+        "treffer": len(kandidaten), "detailabrufe": abrufe,
+        "relevant_vorfilter": len(neu_ids), "frist_abgelaufen": verworfen_frist,
+    }
+    log.info("simap: %s Details geladen, %s mit abgelaufener Frist verworfen, %s im Vorfilter",
+             abrufe, verworfen_frist, len(neu_ids))
     return neu_ids
 
 

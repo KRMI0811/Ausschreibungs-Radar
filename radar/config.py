@@ -14,7 +14,9 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_DIR = ROOT / "config"
-DATA_DIR = ROOT / "data"
+# Die App setzt RADAR_DATA_DIR auf einen Arbeitsordner, damit eine Suche aus der
+# App die Dateien im Repository nicht verändert. Der GitHub-Workflow nutzt data/.
+DATA_DIR = Path(os.environ.get("RADAR_DATA_DIR") or ROOT / "data")
 ZEITZONE = ZoneInfo("Europe/Zurich")
 USER_AGENT = "IOL-Ausschreibungsradar/0.1 (OST, Prototyp; Kontakt via GitHub-Repository)"
 
