@@ -9,6 +9,7 @@ Start lokal:  streamlit run app.py
 
 from __future__ import annotations
 
+import hmac
 import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -19,6 +20,29 @@ import streamlit as st
 from radar.config import DATA_DIR, frist_lesbar, profil as lade_profil, tage_bis
 
 st.set_page_config(page_title="Ausschreibungsradar IOL", page_icon="📡", layout="wide")
+
+
+def passwort_pruefen() -> None:
+    """Einfacher Passwortschutz. Das Passwort steht in den Streamlit-Secrets
+    unter APP_PASSWORT. Ist keines hinterlegt, ist die App offen."""
+    try:
+        soll = st.secrets.get("APP_PASSWORT")
+    except Exception:  # keine secrets.toml vorhanden (z. B. lokal)
+        soll = None
+    if not soll or st.session_state.get("angemeldet"):
+        return
+    st.title("📡 Ausschreibungsradar IOL")
+    eingabe = st.text_input("Passwort", type="password")
+    if eingabe:
+        if hmac.compare_digest(eingabe.strip(), str(soll)):
+            st.session_state["angemeldet"] = True
+            st.rerun()
+        else:
+            st.error("Passwort falsch.")
+    st.stop()
+
+
+passwort_pruefen()
 
 CHANCE_FARBE = {"hoch": "green", "mittel": "orange", "niedrig": "red", "unklar": "gray"}
 
