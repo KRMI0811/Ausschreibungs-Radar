@@ -695,6 +695,10 @@ for e in daten:
     t = tage_bis(e.get("frist"))
     if t is not None and t < 0:
         continue
+    # Förderausschreibungen ohne bekannte Frist nur zeigen, wenn sie höchstens ein halbes Jahr alt sind.
+    # Der SNF-Feed enthält auch Ausschreibungen aus früheren Jahren.
+    if t is None and e["gefaess"] == "forschung" and (tage_bis(e.get("publiziert_am")) or 0) < -180:
+        continue
     themen, relevanz, bewertet = analyse(e, WOERTER)
     if bereich != "Gesamtes Institut" and not themen & set(ZENTREN[bereich]["themen"]):
         continue
