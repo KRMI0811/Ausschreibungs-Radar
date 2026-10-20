@@ -1,1 +1,71 @@
+name: Ausschreibungsradar
 
+on:
+  schedule:
+    # Täglich 07:15 UTC = 09:15 Uhr Sommerzeit bzw. 08:15 Uhr Winterzeit.
+    - cron: "15 7 * * *"
+  workflow_dispatch:
+    inputs:
+      ohne_versand:
+        description: "Nur sammeln, keine E-Mail oder Teams-Nachricht"
+        type: boolean
+        default: false
+      tage:
+        description: "Suchzeitraum simap in Tagen (leer = Standard)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ausschreibungsradar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhängigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Radar ausführen
+        env:
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          OHNE_VERSAND: ${{ inputs.ohne_versand }}
+          TAGE: ${{ inputs.tage }}
+        run: |
+          ARGS=()
+          if [ "$OHNE_VERSAND" = "true" ]; then ARGS+=(--ohne-versand); fi
+          if [[ "$TAGE" =~ ^[0-9]+$ ]]; then ARGS+=(--tage "$TAGE"); fi
+          python -m radar.run "${ARGS[@]}"
+
+      - name: Ergebnisse ins Repository schreiben
+        run: |
+          git config user.name "ausschreibungsradar[bot]"
+          git config user.email "ausschreibungsradar@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen"
+          else
+            git commit -m "Radar-Lauf $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi
