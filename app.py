@@ -460,6 +460,106 @@ def zeile(rang: int, e: dict, themen: set[str], relevanz: int, bewertet: bool) -
                 detailfenster(e)
 
 
+# ---------------------------------------------------------------- Einzelne Ausschreibung prüfen
+
+UUID_RE = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
+PUB_LESBAR = {
+    "tender": "Ausschreibung", "advance_notice": "Vorankündigung", "request_for_information": "Marktabklärung",
+    "study_contract": "Studienauftrag", "competition": "Wettbewerb", "award": "Zuschlag (bereits vergeben)",
+    "direct_award": "freihändiger Zuschlag (bereits vergeben)", "revocation": "Widerruf", "abandonment": "Abbruch",
+    "participant_selection": "Präqualifikation abgeschlossen", "selective_offering_phase": "Angebotsphase selektives Verfahren",
+}
+
+
+def pruefe_simap(link: str) -> tuple[dict | None, list[tuple[str, str]]]:
+    """Lädt ein simap-Projekt und erklärt Schritt für Schritt, ob Findus es zeigt."""
+    from radar import vorfilter
+    from radar.simap import SimapClient, normalisiere
+
+    m = UUID_RE.search(link or "")
+    if not m:
+        return None, [("❌", "Im Link wurde keine simap-Projektnummer gefunden. Bitte den ganzen Link einfügen.")]
+    pid = m.group(0).lower()
+    cfg = radar_config.quellen()["simap"]
+    c = SimapClient(cfg["basis_url"], pause=0)
+    try:
+        kopf_ = c._get(f"/publications/v2/project/{pid}/project-header")
+        lp = kopf_.get("latestPublication") or {}
+        details = c.details(pid, lp["id"])
+    except Exception as ex:
+        return None, [("❌", f"simap.ch hat das Projekt nicht geliefert: {ex}")]
+
+    termine = details.get("dates") or {}
+    treffer = {
+        "id": pid, "title": lp.get("title"), "projectNumber": kopf_.get("projectNumber"),
+        "projectSubType": kopf_.get("projectSubType"), "processType": lp.get("processType") or kopf_.get("processType"),
+        "pubType": lp.get("pubType"), "publicationId": lp.get("id"), "publicationNumber": lp.get("publicationNumber"),
+        "publicationDate": termine.get("publicationDate") or (details.get("base") or {}).get("publicationDate"),
+        "procOfficeName": ((details.get("project-info") or {}).get("procOfficeAddress") or {}).get("name"),
+        "lots": [{"lotNumber": l.get("lotNumber"), "lotTitle": l.get("title")} for l in kopf_.get("lots") or []],
+    }
+    e = normalisiere(treffer, details, cfg["web_link"])
+    b: list[tuple[str, str]] = []
+
+    art_ = treffer["projectSubType"]
+    b.append(("✅" if art_ in cfg["auftragsarten"] else "❌",
+              f"Auftragsart: {art_}" + ("" if art_ in cfg["auftragsarten"] else " wird von Findus nicht durchsucht")))
+    pt = treffer["pubType"]
+    ok_pt = pt in cfg["publikationsarten"]
+    b.append(("✅" if ok_pt else "❌", f"Neueste Publikation: {PUB_LESBAR.get(pt, pt)}"
+              + ("" if ok_pt else ". Findus zeigt nur Ausschreibungen, bei denen man sich noch bewerben kann.")))
+    datum = treffer["publicationDate"]
+    if datum:
+        alter = (datetime.now(ZEITZONE).date() - datetime.fromisoformat(datum[:10]).date()).days
+        b.append(("✅" if alter <= 30 else "⚠️", f"Publiziert am {datum[:10]}, vor {alter} Tagen"
+                  + ("" if alter <= 30 else ". Das liegt vor dem Suchzeitraum von Findus.")))
+    t = tage_bis(e.get("frist"))
+    if t is None:
+        b.append(("⚠️", "Keine Eingabefrist in den simap-Daten"))
+    else:
+        b.append(("✅" if t >= 0 else "❌", f"Eingabefrist {frist_lesbar(e['frist'])}" + ("" if t >= 0 else ", bereits abgelaufen")))
+    punkte, themen, grund = vorfilter.bewerte(e, lade_profil())
+    minimum = int((lade_profil().get("schwellen") or {}).get("vorfilter_min", 3))
+    if grund:
+        b.append(("❌", f"Vorfilter: aussortiert ({grund})"))
+    else:
+        b.append(("✅" if punkte >= minimum else "❌", f"Vorfilter: {punkte} Punkte (nötig {minimum}), "
+                  f"Themen: {', '.join(themen) or 'keine'}"))
+    vorhanden = next((x for x in daten if x["id"] == e["id"]), None)
+    if vorhanden:
+        th, rel, bew = analyse(vorhanden, WOERTER)
+        wo = ", ".join(kz_von(th)) or "keinem Kompetenzzentrum"
+        b.append(("✅", f"In Findus gespeichert. Passung {rel}/100"
+                  + ("" if bew else " (vorläufig, ohne Sprachmodell)") + f", zugeordnet zu {wo}"))
+    else:
+        b.append(("ℹ️", "Noch nicht in Findus gespeichert"))
+    e.update(vorfilter_score=punkte, vorfilter_themen=themen)
+    return e, b
+
+
+def aufnehmen(e: dict) -> None:
+    """Nimmt eine geprüfte Ausschreibung in Findus auf und lässt sie bewerten."""
+    from radar import bewertung
+    from radar.llm import LLM
+
+    if secret("LLM_API_KEY"):
+        os.environ["LLM_API_KEY"] = secret("LLM_API_KEY")
+    jetzt = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    e.update(erstmals_gefunden=jetzt, zuletzt_gesehen=jetzt, gemeldet=False, erinnert=[], manuell=True)
+    llm = LLM()
+    if llm.verfuegbar:
+        with st.spinner("Sprachmodell bewertet die Ausschreibung …"):
+            try:
+                e["bewertung"] = bewertung.bewerte_dienstleistung(llm, e, lade_profil())
+                e["bewertet_mit"], e["bewertet_am"] = llm.modell, jetzt
+            except Exception as ex:
+                st.warning(f"Bewertung nicht möglich: {ex}")
+    alle = speicher.lade_eintraege()
+    alle[e["id"]] = e
+    speicher.speichere_eintraege(alle)
+    lade_daten.clear()
+
+
 # ---------------------------------------------------------------- Seite
 
 synchronisiere()
@@ -559,3 +659,24 @@ elif not liste:
     st.write("Aktuell keine passenden Ausschreibungen in dieser Auswahl.")
 for i, (e, themen, relevanz, bewertet) in enumerate(liste, 1):
     zeile(i, e, themen, relevanz, bewertet)
+
+st.write("")
+with st.expander("🔍 Fehlt eine Ausschreibung? Link von simap.ch prüfen"):
+    st.caption("Fügen Sie den Link einer Ausschreibung von simap.ch ein. Findus zeigt, ob und warum sie "
+               "erscheint, und kann sie aufnehmen.")
+    link = st.text_input("Link", placeholder="https://www.simap.ch/de/project-detail/…", label_visibility="collapsed")
+    if st.button("Prüfen") and link:
+        with st.spinner("Frage simap.ch ab …"):
+            st.session_state["pruefung"] = pruefe_simap(link)
+    if st.session_state.get("pruefung"):
+        geprueft, befunde = st.session_state["pruefung"]
+        if geprueft:
+            st.markdown(f"**{geprueft.get('titel')}** · {geprueft.get('auftraggeber') or ''}")
+        for zeichen, text in befunde:
+            st.write(f"{zeichen} {text}")
+        if geprueft and not any(geprueft["id"] == x["id"] for x in daten):
+            if st.button("In Findus aufnehmen und bewerten", type="primary"):
+                aufnehmen(geprueft)
+                st.session_state.pop("pruefung", None)
+                st.success("Aufgenommen. Die Ausschreibung erscheint jetzt in der Liste.")
+                st.rerun()
