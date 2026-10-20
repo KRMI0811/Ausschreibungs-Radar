@@ -35,8 +35,16 @@ ARBEIT = Path(tempfile.gettempdir()) / "findus_daten"
 os.environ["RADAR_DATA_DIR"] = str(ARBEIT)
 
 from radar.config import ZEITZONE, frist_lesbar, profil as lade_profil, tage_bis  # noqa: E402
+from radar import benachrichtigung, config as radar_config, llm as radar_llm, speicher  # noqa: E402
 
-st.set_page_config(page_title="Findus · Ausschreibungsradar IOL", page_icon="📡", layout="centered")
+# Alle Module des Suchprogramms auf den Arbeitsordner umlenken. So funktioniert
+# das auch mit älteren Versionen von radar/config.py im Repository.
+for _modul in (radar_config, benachrichtigung, radar_llm, speicher):
+    _modul.DATA_DIR = ARBEIT
+speicher.DATEI = ARBEIT / "ausschreibungen.json"
+speicher.STATUS = ARBEIT / "quellen_status.json"
+
+st.set_page_config(page_title="Findus · Ausschreibungsradar IOL", page_icon="🐕", layout="centered")
 
 DATEIEN = ("ausschreibungen.json", "quellen_status.json", "nutzung.jsonl")
 CHANCE = {"hoch": "🟢 hoch", "mittel": "🟡 mittel", "niedrig": "🔴 niedrig", "unklar": "⚪ unklar"}
@@ -54,7 +62,7 @@ def secret(name: str) -> str | None:
 # ---------------------------------------------------------------- Passwort
 
 if secret("APP_PASSWORT") and not st.session_state.get("angemeldet"):
-    st.title("📡 Findus")
+    st.markdown("## Findus")
     st.caption("Der Ausschreibungsradar des IOL")
     pw = st.text_input("Passwort", type="password")
     if pw:
@@ -238,24 +246,85 @@ def zeile(rang: int, e: dict) -> None:
                 detailfenster(e)
 
 
+# ---------------------------------------------------------------- Kompetenzzentren und Logos
+
+# Feste Zuordnung, falls config/profil.yaml (noch) keine Kompetenzzentren enthält
+KZ_STANDARD = {
+    "Kompetenzzentrum Organisation & Nachhaltigkeit": {
+        "beschreibung": "Organisationsentwicklung, digitale Transformation und KI, Nachhaltigkeitsmanagement",
+        "themen": ["Organisationsentwicklung", "Digitale Transformation und KI", "Nachhaltigkeit und Kreislaufwirtschaft"],
+    },
+    "Kompetenzzentrum Leadership & HR": {
+        "beschreibung": "Führung, Governance, Personalentwicklung und Personalauswahl, Arbeitsgestaltung und Work-Life-Balance",
+        "themen": ["Leadership und Führung", "Governance", "Human Resources", "Arbeitsgestaltung und Work-Life-Balance"],
+    },
+}
+
+
+def kompetenzzentren(prof: dict) -> dict:
+    """Nimmt die Zentren aus profil.yaml, sonst die feste Zuordnung. Namen mit "&"."""
+    aus_profil = prof.get("kompetenzzentren") or {}
+    if not aus_profil:
+        return KZ_STANDARD
+    return {
+        name.replace(" und ", " & ", 1) if name.startswith("Kompetenzzentrum") else name: {
+            "beschreibung": kz.get("beschreibung") or "",
+            "themen": list(kz.get("themen") or []),
+        }
+        for name, kz in aus_profil.items()
+    }
+
+
+HAUPT = Path(__file__).resolve().parent
+
+
+def bild(*namen: str) -> Path | None:
+    """Sucht ein Bild auf der Hauptebene des Repositorys (png, jpg, jpeg, svg, webp)."""
+    for name in namen:
+        for endung in ("png", "jpg", "jpeg", "svg", "webp", "PNG", "JPG"):
+            p = HAUPT / f"{name}.{endung}"
+            if p.exists():
+                return p
+    return None
+
+
+def kopf() -> None:
+    """Kopfzeile mit IOL-Logo links und Findus mit Spürhund."""
+    iol = bild("logo_iol", "iol_logo", "IOL_Logo", "iol")
+    hund = bild("findus", "spuerhund", "hund")
+    links, rechts = st.columns([1, 3], vertical_alignment="center")
+    with links:
+        if iol:
+            st.image(str(iol), width=140)
+        else:
+            st.markdown("**IOL**")
+    with rechts:
+        a, b = st.columns([1, 4], vertical_alignment="center")
+        with a:
+            if hund:
+                st.image(str(hund), width=80)
+            else:
+                st.markdown("<div style='font-size:52px;line-height:1'>🐕</div>", unsafe_allow_html=True)
+        with b:
+            st.markdown("<h1 style='margin:0;padding:0'>Findus</h1>", unsafe_allow_html=True)
+            st.caption("Der Ausschreibungsradar des IOL")
+
+
 # ---------------------------------------------------------------- Seite
 
 synchronisiere()
 daten, status = lade_daten(_stand(ARBEIT))
 prof = lade_profil()
 schwelle = int((prof.get("schwellen") or {}).get("passung_melden", 60))
-zentren = prof.get("kompetenzzentren") or {}
-
-st.title("📡 Findus")
-st.caption("Der Ausschreibungsradar des IOL")
-
-bereiche = ["Gesamtes Institut"] + list(zentren)
-bereich = st.segmented_control("Bereich", bereiche, default=bereiche[0], label_visibility="collapsed") or bereiche[0]
-art = st.segmented_control("Art", ["Alle", "Dienstleistung", "Forschung und Förderung"], default="Alle",
-                           label_visibility="collapsed") or "Alle"
-
-
 VORFILTER_MIN = int((prof.get("schwellen") or {}).get("vorfilter_min", 3))
+zentren = kompetenzzentren(prof)
+
+kopf()
+
+BEREICHE = ["Gesamtes Institut"] + list(zentren)
+bereich = st.segmented_control("Bereich", BEREICHE, default=BEREICHE[0], label_visibility="collapsed") or BEREICHE[0]
+ARTEN = ["Dienstleistungsausschreibungen", "Forschung und Entwicklung Förderungen", "Weitere interessante"]
+art = st.segmented_control("Art", ARTEN, default=ARTEN[0], label_visibility="collapsed") or ARTEN[0]
 
 
 def passung(e: dict) -> int:
@@ -266,7 +335,7 @@ def passung(e: dict) -> int:
     return min(70, e.get("vorfilter_score", 0) * 10)
 
 
-def gehoert_dazu(e: dict) -> bool:
+def im_bereich(e: dict) -> bool:
     b = e.get("bewertung") or {}
     if b.get("ist_ausschreibung") is False or b.get("empfehlung") == "nicht weiterverfolgen":
         return False
@@ -275,36 +344,36 @@ def gehoert_dazu(e: dict) -> bool:
     t = tage_bis(e.get("frist"))
     if t is not None and t < 0:
         return False
-    if art == "Dienstleistung" and e["gefaess"] != "dienstleistung":
-        return False
-    if art == "Forschung und Förderung" and e["gefaess"] != "forschung":
-        return False
-    if bereich != "Gesamtes Institut" and not themen_von(e) & set(zentren[bereich].get("themen") or []):
+    if bereich != "Gesamtes Institut" and not themen_von(e) & set(zentren[bereich]["themen"]):
         return False
     return True
 
 
-kandidaten = sorted([e for e in daten if gehoert_dazu(e)],
-                    key=lambda e: (-passung(e), tage_bis(e.get("frist")) or 999))
-passend = [e for e in kandidaten if passung(e) >= schwelle]
-weitere = [e for e in kandidaten if e not in passend]
+alle = sorted([e for e in daten if im_bereich(e)], key=lambda e: (-passung(e), tage_bis(e.get("frist")) or 999))
+if art == ARTEN[0]:
+    liste = [e for e in alle if e["gefaess"] == "dienstleistung" and passung(e) >= schwelle]
+    leer = "Aktuell keine passende Dienstleistungsausschreibung in diesem Bereich."
+elif art == ARTEN[1]:
+    liste = [e for e in alle if e["gefaess"] == "forschung" and passung(e) >= schwelle]
+    leer = "Aktuell keine passende Förderausschreibung in diesem Bereich."
+else:
+    liste = [e for e in alle if passung(e) < schwelle]
+    leer = "Keine weiteren Ausschreibungen in diesem Bereich."
 
 st.divider()
 if not daten:
     st.info("Noch keine Ausschreibungen geladen. Klicken Sie unten auf **Jetzt neu suchen**. "
             "Danach aktualisiert sich Findus jeden Morgen automatisch.")
 else:
-    st.markdown(f"#### {len(passend)} passende Ausschreibung{'en' if len(passend) != 1 else ''}")
-    if bereich != "Gesamtes Institut" and zentren[bereich].get("beschreibung"):
+    st.markdown(f"#### {art} · {len(liste)}")
+    if bereich != "Gesamtes Institut":
         st.caption(zentren[bereich]["beschreibung"])
-    if not passend:
-        st.write("Aktuell keine Ausschreibung mit hoher Passung in dieser Auswahl.")
-    for i, e in enumerate(passend, 1):
+    if art == ARTEN[2]:
+        st.caption("Ausschreibungen mit teilweiser Passung. Ein Blick kann sich lohnen, etwa für Partnerschaften.")
+    if not liste:
+        st.write(leer)
+    for i, e in enumerate(liste, 1):
         zeile(i, e)
-    if weitere:
-        with st.expander(f"Weniger passende anzeigen ({len(weitere)})"):
-            for i, e in enumerate(weitere, len(passend) + 1):
-                zeile(i, e)
 
 st.divider()
 stand = status.get("letzter_lauf")
