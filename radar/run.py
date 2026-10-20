@@ -11,7 +11,9 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
 import sys
+import time
 from typing import Any
 
 from . import benachrichtigung, bewertung, foerder, speicher, vorfilter
@@ -65,6 +67,25 @@ SUCH_ZUSATZ = ["HR-Dienstleistungen", "HR-Beratung", "Personaldienstleistungen",
                "Kaderentwicklung", "Weiterbildung", "Evaluation", "Mitarbeitendenbefragung", "Personalgewinnung"]
 SUCH_TAGE = 150        # Volltextsuche: Projekte der letzten 150 Tage, entscheidend ist danach die Frist
 MIN_DETAILABRUFE = 1000
+ZWISCHENSPEICHERN_ALLE = 25   # nach so vielen geprüften Projekten wird gespeichert
+
+
+class Zeitbudget:
+    """Sorgt dafür, dass ein Lauf geordnet endet, bevor GitHub ihn abbricht.
+    Was nicht mehr geschafft wird, holt der nächste Lauf nach."""
+
+    def __init__(self, minuten: float):
+        self.ende = time.monotonic() + minuten * 60
+        self.minuten = minuten
+
+    @property
+    def abgelaufen(self) -> bool:
+        return time.monotonic() > self.ende
+
+
+def zwischenspeichern(eintraege, status) -> None:
+    speicher.speichere_eintraege(eintraege)
+    speicher.speichere_status(status)
 
 
 def suchbegriffe(prof: dict[str, Any]) -> list[str]:
@@ -81,7 +102,7 @@ def suchbegriffe(prof: dict[str, Any]) -> list[str]:
     return list(eindeutig.values())
 
 
-def lauf_simap(eintraege, status, prof, cfg, llm, tage_override, fehler) -> list[str]:
+def lauf_simap(eintraege, status, prof, cfg, llm, tage_override, fehler, budget: Zeitbudget | None = None) -> list[str]:
     """Findet alle noch offenen, passenden Ausschreibungen.
 
     Zwei Wege ergänzen sich:
@@ -106,6 +127,9 @@ def lauf_simap(eintraege, status, prof, cfg, llm, tage_override, fehler) -> list
     begriffe = suchbegriffe(prof)
     fehlgeschlagen: list[str] = []
     for begriff in begriffe:
+        if budget and budget.abgelaufen:
+            fehler.append("simap: Zeitbudget während der Stichwortsuche erreicht, Rest folgt im nächsten Lauf")
+            break
         try:
             for t in client.suche(SUCH_TAGE, cfg["auftragsarten"], cfg["publikationsarten"],
                                   max_seiten=5, suchbegriff=begriff):
@@ -126,7 +150,16 @@ def lauf_simap(eintraege, status, prof, cfg, llm, tage_override, fehler) -> list
              len(kandidaten), stichwort, len(begriffe), tage)
 
     # 2. Details laden, nach Frist und Vorfilter entscheiden
+    geprueft = 0
     for treffer in kandidaten.values():
+        if budget and budget.abgelaufen:
+            fehler.append(f"simap: Zeitbudget von {budget.minuten:.0f} Minuten erreicht, "
+                          "die restlichen Projekte prüft der nächste Lauf")
+            break
+        geprueft += 1
+        if geprueft % ZWISCHENSPEICHERN_ALLE == 0:
+            zwischenspeichern(eintraege, status)
+            log.info("simap: %s von %s Projekten geprüft, Zwischenstand gespeichert", geprueft, len(kandidaten))
         pid, pubid = treffer["id"], treffer.get("publicationId")
         eid = f"simap:{pid}"
         if gesehen.get(pid) == pubid:
@@ -244,18 +277,22 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--ohne-versand", action="store_true", help="keine E-Mail und keine Teams-Nachricht senden")
     ap.add_argument("--nur", choices=["simap", "foerderung"], help="nur eine Quelle abfragen")
     ap.add_argument("--tage", type=int, help="Suchzeitraum für simap in Tagen")
+    ap.add_argument("--max-minuten", type=float, default=float(os.environ.get("RADAR_MAX_MINUTEN", 90)),
+                    help="Zeitbudget; danach wird geordnet gespeichert und beendet (Standard 90)")
     args = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
     prof, cfg = lade_profil(), lade_quellen()
     eintraege, status = speicher.lade_eintraege(), speicher.lade_status()
     llm = LLM()
+    budget = Zeitbudget(args.max_minuten)
     if not llm.verfuegbar:
         log.warning("Kein LLM_API_KEY gesetzt. Es wird nur der regelbasierte Vorfilter genutzt.")
     fehler: list[str] = []
 
     if args.nur in (None, "simap") and (cfg.get("simap") or {}).get("aktiv", True):
-        lauf_simap(eintraege, status, prof, cfg["simap"], llm, args.tage, fehler)
+        lauf_simap(eintraege, status, prof, cfg["simap"], llm, args.tage, fehler, budget)
+        zwischenspeichern(eintraege, status)
     if args.nur in (None, "foerderung"):
         lauf_foerderung(eintraege, status, prof, cfg.get("foerderung") or [], llm, fehler)
 
