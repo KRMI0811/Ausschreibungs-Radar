@@ -376,6 +376,52 @@ def marken(themen: set[str]) -> str:
     return "".join(f"<span class='kz-marke'>{n.replace('Kompetenzzentrum ', 'KZ ')}</span>" for n in kz_von(themen))
 
 
+PRIO_SYMBOL = {"hoch": "🔴 hoch", "mittel": "🟠 mittel", "niedrig": "⚪ niedrig"}
+
+
+def tage_seit(datum: str | None) -> int | None:
+    t = tage_bis(datum)
+    return -t if t is not None else None
+
+
+def prioritaet(e: dict, relevanz: int) -> tuple[str, int, list[str]]:
+    """Priorität aus Passung, Eingabefrist und Erscheinungsdatum. Gibt (Stufe, Punkte, Gründe) zurück."""
+    punkte = relevanz
+    gruende = [f"Passung {relevanz}/100"]
+    t = tage_bis(e.get("frist"))
+    if t is not None:
+        if t < 5:
+            punkte -= 15
+            gruende.append(f"nur noch {t} Tage, kaum mehr machbar")
+        elif t <= 21:
+            punkte += 10
+            gruende.append(f"Frist in {t} Tagen, jetzt entscheiden")
+        else:
+            gruende.append(f"genügend Zeit ({t} Tage)")
+    seit = tage_seit(e.get("publiziert_am"))
+    if seit is not None and seit <= 7:
+        punkte += 5
+        gruende.append("neu erschienen")
+    if e.get("publikationsart_code") in ("advance_notice", "request_for_information"):
+        punkte += 5
+        gruende.append("Frühphase, Positionierung möglich")
+    stufe = "hoch" if punkte >= 80 else ("mittel" if punkte >= 60 else "niedrig")
+    return stufe, punkte, gruende
+
+
+def aufwand(e: dict) -> tuple[str | None, dict]:
+    """Aufwand aus den simap-Feldern, sonst Einschätzung des Sprachmodells."""
+    try:
+        from radar.bewertung import aufwand_steckbrief
+        aw = aufwand_steckbrief(e)
+    except Exception:
+        aw = {"stufe": None, "gruende": [], "fakten": []}
+    stufe = aw.get("stufe")
+    if not stufe and bekannt((e.get("bewertung") or {}).get("aufwand")):
+        stufe = e["bewertung"]["aufwand"]
+    return stufe, aw
+
+
 @st.dialog("Ausschreibung im Detail", width="large")
 def detailfenster(e: dict) -> None:
     b = e.get("bewertung") or {}
@@ -385,20 +431,29 @@ def detailfenster(e: dict) -> None:
                                            e.get("publikationsart"), e.get("verfahren")] if x))
     st.markdown(marken(themen), unsafe_allow_html=True)
 
-    kennzahlen = []
+    prio, _, prio_gruende = prioritaet(e, relevanz)
+    aw_stufe, aw = aufwand(e)
+    kennzahlen = [("Priorität", PRIO_SYMBOL[prio])]
     if bewertet:
-        kennzahlen.append(("Bewertung", sterne(relevanz)))
+        kennzahlen.append(("Passung", sterne(relevanz)))
     if bekannt(b.get("erfolgschance")):
         kennzahlen.append(("Erfolgschance", b["erfolgschance"].capitalize()))
-    if bekannt(b.get("aufwand")):
-        kennzahlen.append(("Aufwand", b["aufwand"].capitalize()))
-    if kennzahlen:
-        for spalte, (titel, wert) in zip(st.columns(len(kennzahlen)), kennzahlen):
-            spalte.metric(titel, wert)
+    if aw_stufe:
+        kennzahlen.append(("Aufwand", aw_stufe.capitalize()))
+    for spalte, (titel, wert) in zip(st.columns(len(kennzahlen)), kennzahlen):
+        spalte.metric(titel, wert)
+    st.caption("Priorität: " + ", ".join(prio_gruende))
     if not bewertet:
         st.info("Noch nicht vom Sprachmodell bewertet. Die Einordnung beruht auf Stichworten.")
+    termine = []
+    if e.get("publiziert_am"):
+        termine.append(f"**Erschienen:** {frist_lesbar(e['publiziert_am'])}")
     if frist := frist_text(e):
-        st.markdown(f"**📅 Eingabefrist:** {frist}")
+        termine.append(f"**📅 Eingabefrist:** {frist}")
+    if e.get("fragen_bis"):
+        termine.append(f"**Fragen bis:** {', '.join(frist_lesbar(x) for x in e['fragen_bis'])}")
+    if termine:
+        st.markdown(" &nbsp;·&nbsp; ".join(termine))
     st.markdown("**Worum geht es?**")
     st.write(b.get("kurzfassung") or (e.get("text") or "")[:700])
     anforderungen = [a for a in b.get("anforderungen") or [] if bekannt(a)]
@@ -407,6 +462,11 @@ def detailfenster(e: dict) -> None:
         st.markdown("\n".join(f"- {a}" for a in anforderungen))
     if bekannt(b.get("foerderbetrag")):
         st.markdown(f"**Förderbetrag:** {b['foerderbetrag']}")
+    if aw.get("gruende") or aw.get("fakten"):
+        st.markdown("**Steckbrief und Aufwand**")
+        zeilen_ = [f"- {f}" for f in aw.get("fakten") or []]
+        zeilen_ += [f"- Aufwandstreiber: {', '.join(aw['gruende'])}"] if aw.get("gruende") else []
+        st.markdown("\n".join(zeilen_))
     begr = [f"**{n}:** {b[f]}" for n, f in (("Passung", "passung_begruendung"),
                                             ("Erfolgschance", "erfolgschance_begruendung"),
                                             ("Aufwand", "aufwand_begruendung")) if bekannt(b.get(f))]
@@ -440,16 +500,20 @@ def zeile(rang: int, e: dict, themen: set[str], relevanz: int, bewertet: bool) -
         with links:
             st.markdown(f"##### {rang}. {e.get('titel')}")
             info = [ART_SYMBOL.get(e["gefaess"], ""), e.get("auftraggeber") or ""]
+            if e.get("publiziert_am"):
+                info.append(f"erschienen {frist_lesbar(e['publiziert_am'])}")
             if frist := frist_text(e):
-                info.append(f"📅 {frist}")
+                info.append(f"📅 Frist {frist}")
             st.caption(" · ".join(i for i in info if i))
-            teile = []
+            prio, _, _ = prioritaet(e, relevanz)
+            teile = [f"Priorität **{PRIO_SYMBOL[prio]}**"]
             if bewertet:
                 teile.append(f"**{sterne(relevanz)}**")
             if bekannt(b.get("erfolgschance")):
                 teile.append(f"Chance {CHANCE.get(b['erfolgschance'], b['erfolgschance'])}")
-            if bekannt(b.get("aufwand")):
-                teile.append(f"Aufwand {b['aufwand']}")
+            aw_stufe, _ = aufwand(e)
+            if aw_stufe:
+                teile.append(f"Aufwand {aw_stufe}")
             st.markdown(" &nbsp;·&nbsp; ".join(teile) + ("&nbsp;&nbsp;" if teile else "") + marken(themen),
                         unsafe_allow_html=True)
             kurz = b.get("kurzfassung") or (e.get("text") or "")[:240]
@@ -511,8 +575,8 @@ def pruefe_simap(link: str) -> tuple[dict | None, list[tuple[str, str]]]:
     datum = treffer["publicationDate"]
     if datum:
         alter = (datetime.now(ZEITZONE).date() - datetime.fromisoformat(datum[:10]).date()).days
-        b.append(("✅" if alter <= 30 else "⚠️", f"Publiziert am {datum[:10]}, vor {alter} Tagen"
-                  + ("" if alter <= 30 else ". Das liegt vor dem Suchzeitraum von Findus.")))
+        b.append(("✅" if alter <= 150 else "⚠️", f"Publiziert am {datum[:10]}, vor {alter} Tagen"
+                  + ("" if alter <= 150 else ". Das liegt vor dem Suchzeitraum von Findus (150 Tage).")))
     t = tage_bis(e.get("frist"))
     if t is None:
         b.append(("⚠️", "Keine Eingabefrist in den simap-Daten"))
@@ -642,7 +706,7 @@ for e in daten:
     if art == ARTEN[2] and (passend or relevanz < 15):
         continue
     liste.append((e, themen, relevanz, bewertet))
-liste.sort(key=lambda x: (-x[2], tage_bis(x[0].get("frist")) or 999))
+liste.sort(key=lambda x: (-prioritaet(x[0], x[2])[1], tage_bis(x[0].get("frist")) or 999))
 
 st.markdown(f"## {bereich}")
 st.markdown(f"#### {art} · {len(liste)} Treffer")
