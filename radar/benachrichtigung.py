@@ -80,7 +80,7 @@ def baue_bericht(neu: list[dict[str, Any]], erinnerungen: list[tuple[dict[str, A
 
     teile = [
         '<div style="font-family:Segoe UI,Arial,sans-serif;max-width:760px;color:#222">',
-        f"<h2 style=\"margin-bottom:4px\">Ausschreibungsradar IOL · {heute().strftime('%d.%m.%Y')}</h2>",
+        f"<h2 style=\"margin-bottom:4px\">Findus · Ausschreibungsradar IOL · {heute().strftime('%d.%m.%Y')}</h2>",
         f'<p style="color:#555;margin-top:0">{len(dl)} neue Dienstleistungsausschreibung(en), '
         f"{len(fo)} neue Förderausschreibung(en), {len(erinnerungen)} Fristerinnerung(en).</p>",
     ]
@@ -101,14 +101,14 @@ def baue_bericht(neu: list[dict[str, Any]], erinnerungen: list[tuple[dict[str, A
     )
     html_text = "\n".join(teile)
 
-    zeilen = [f"Ausschreibungsradar IOL, {heute().strftime('%d.%m.%Y')}", ""]
+    zeilen = [f"Findus, Ausschreibungsradar IOL, {heute().strftime('%d.%m.%Y')}", ""]
     for e, t in erinnerungen:
         zeilen.append(f"ERINNERUNG ({t} Tage): {e['titel']} | Frist {frist_lesbar(e.get('frist'))} | {e.get('link_quelle')}")
     for e in sortiert(dl) + sortiert(fo):
         b = e.get("bewertung") or {}
         zeilen.append(f"- {e['titel']} ({e.get('auftraggeber')})")
         zeilen.append(f"  Frist: {frist_lesbar(e.get('frist'))} | Passung {b.get('passung', '?')} | {e.get('link_quelle')}")
-    betreff = f"Ausschreibungsradar: {len(dl) + len(fo)} neu, {len(erinnerungen)} Erinnerung(en)"
+    betreff = f"Findus: {len(dl) + len(fo)} neu, {len(erinnerungen)} Erinnerung(en)"
     return betreff, html_text, "\n".join(zeilen)
 
 
@@ -143,7 +143,7 @@ def sende_teams(neu: list[dict[str, Any]], erinnerungen: list[tuple[dict[str, An
     if not url:
         return False
     bloecke: list[dict[str, Any]] = [
-        {"type": "TextBlock", "size": "Large", "weight": "Bolder", "text": f"Ausschreibungsradar · {heute().strftime('%d.%m.%Y')}"}
+        {"type": "TextBlock", "size": "Large", "weight": "Bolder", "text": f"Findus · Ausschreibungsradar · {heute().strftime('%d.%m.%Y')}"}
     ]
 
     def zeile(e: dict[str, Any], vor: str = "") -> dict[str, Any]:

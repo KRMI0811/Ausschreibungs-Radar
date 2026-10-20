@@ -20,8 +20,19 @@ def _norm(text: str) -> str:
     return " " + re.sub(r"\s+", " ", (text or "").lower()) + " "
 
 
+_MUSTER: dict[str, re.Pattern[str]] = {}
+
+
 def _enthaelt(text: str, begriff: str) -> bool:
-    return begriff.lower() in text
+    """Begriff muss am Wortanfang stehen, damit "führung" zwar "Führungsentwicklung",
+    aber nicht "Einführung" oder "Durchführung" trifft. Endet der Begriff in der
+    Konfiguration mit einem Leerzeichen (z. B. " ki "), muss er auch am Wortende stehen."""
+    muster = _MUSTER.get(begriff)
+    if muster is None:
+        kern = re.escape(begriff.strip().lower())
+        ende = r"(?!\w)" if begriff.endswith(" ") else ""
+        muster = _MUSTER[begriff] = re.compile(r"(?<!\w)" + kern + ende)
+    return bool(muster.search(text))
 
 
 def bewerte(eintrag: dict[str, Any], profil: dict[str, Any]) -> tuple[int, list[str], str | None]:
