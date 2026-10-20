@@ -14,8 +14,10 @@ institut:
   bevorzugte_kantone: ["SG", "TG", "AR", "AI", "GR", "ZH", "SH", "GL"]
 
 # Kernthemen mit Suchbegriffen für den Vorfilter.
-# Begriffe werden ohne Gross/Kleinschreibung gesucht, auch als Wortteil
-# ("führung" trifft also auch "Führungsentwicklung").
+# Begriffe werden ohne Gross/Kleinschreibung am Wortanfang gesucht.
+# "führung" trifft also "Führungsentwicklung", aber nicht "Einführung" oder
+# "Durchführung". Zusammengesetzte Wörter wie "Personalführung" deshalb
+# zusätzlich ausdrücklich aufführen.
 kernthemen:
   Leadership und Führung:
     - führung
@@ -25,6 +27,11 @@ kernthemen:
     - coaching
     - mentoring
     - management development
+    - personalführung
+    - mitarbeiterführung
+    - mitarbeitendenführung
+    - teamentwicklung
+    - nachfolgeplanung
   Human Resources:
     - personal
     - human resources
@@ -33,16 +40,58 @@ kernthemen:
     - personalauswahl
     - rekrutierung
     - assessment
-    - arbeitsgestaltung
-    - arbeitsmodell
-    - work-life
-    - vereinbarkeit
     - mitarbeitendenbefragung
     - mitarbeiterbefragung
     - kompetenzmodell
     - lohnsystem
-    - gesundheitsmanagement
     - fachkräfte
+    - employer branding
+    - arbeitgeberattraktivität
+  Arbeitsgestaltung und Work-Life-Balance:
+    - arbeitsgestaltung
+    - arbeitsmodell
+    - arbeitszeitmodell
+    - arbeitszeitgestaltung
+    - 4-tage-woche
+    - vier-tage-woche
+    - viertagewoche
+    - 4 tage woche
+    - work-life
+    - work life
+    - worklife
+    - vereinbarkeit
+    - teilzeit
+    - jobsharing
+    - job-sharing
+    - topsharing
+    - flexible arbeit
+    - mobiles arbeiten
+    - homeoffice
+    - home-office
+    - hybride arbeit
+    - new work
+    - arbeitsbelastung
+    - gesundheitsmanagement
+    - psychische gesundheit
+    - wohlbefinden
+    - sabbatical
+  Governance:
+    - governance
+    - corporate governance
+    - public governance
+    - aufsichtsgremi
+    - verwaltungsrat
+    - stiftungsrat
+    - vorstandsarbeit
+    - eigentümerstrategie
+    - beteiligungsmanagement
+    - beteiligungsstrategie
+    - compliance
+    - internes kontrollsystem
+    - rollenklärung
+    - kompetenzregelung
+    - funktionendiagramm
+    - führungsmodell
   Organisationsentwicklung:
     - organisationsentwicklung
     - organisationsanalyse
@@ -69,8 +118,6 @@ kernthemen:
     - artificial intelligence
     - e-government
     - digitalstrategie
-    - new work
-    - hybride arbeit
   Nachhaltigkeit und Kreislaufwirtschaft:
     - nachhaltigkeit
     - nachhaltigkeitsmanagement
@@ -80,6 +127,25 @@ kernthemen:
     - esg
     - klimastrategie
     - umweltmanagement
+
+# Zuordnung der Kernthemen zu den Kompetenzzentren. Die App zeigt die
+# Empfehlungen getrennt nach diesen Zentren. Namen und Zuordnung bitte an die
+# offizielle Struktur des IOL anpassen. Die Themen müssen exakt den Namen unter
+# "kernthemen" entsprechen. Ein Treffer kann in beiden Zentren erscheinen.
+kompetenzzentren:
+  Kompetenzzentrum Organisation und Nachhaltigkeit:
+    beschreibung: "Organisationsentwicklung, digitale Transformation und KI, Nachhaltigkeitsmanagement"
+    themen:
+      - Organisationsentwicklung
+      - Digitale Transformation und KI
+      - Nachhaltigkeit und Kreislaufwirtschaft
+  Kompetenzzentrum Leadership und HR:
+    beschreibung: "Führung, Governance, Personalentwicklung und Personalauswahl, Arbeitsgestaltung und Work-Life-Balance"
+    themen:
+      - Leadership und Führung
+      - Governance
+      - Human Resources
+      - Arbeitsgestaltung und Work-Life-Balance
 
 # Begriffe, die auf eine Beratungs-, Studien- oder Evaluationsleistung hinweisen.
 # Sie erhöhen den Vorfilter-Score leicht, reichen allein aber nicht aus.
