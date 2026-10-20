@@ -1,0 +1,70 @@
+# Quellen des Ausschreibungsradars
+#
+# Zwei Gefässe:
+#   dienstleistung  -> öffentliche Beschaffungen auf simap.ch
+#   forschung       -> Förderausschreibungen (SNF, Innosuisse, Stiftungen)
+
+simap:
+  aktiv: true
+  basis_url: "https://www.simap.ch/api"
+  # Öffentlicher Link auf ein Projekt. Bitte beim ersten Lauf einmal im Browser
+  # prüfen. Falls simap das Muster ändert, hier anpassen ({id} = Projekt-ID).
+  web_link: "https://www.simap.ch/de/project-detail/{id}"
+  # Auftragsarten (projectSubTypes der simap API)
+  auftragsarten: ["service", "project_study", "idea_study", "request_for_information"]
+  # Publikationsarten, die für eine Bewerbung relevant sind. Vorankündigungen
+  # (advance_notice) und Marktabklärungen (request_for_information) sind
+  # besonders wertvoll, weil sie früh informieren.
+  publikationsarten: ["advance_notice", "request_for_information", "tender", "study_contract", "competition"]
+  # Wie viele Tage zurück beim ersten Lauf bzw. bei jedem Lauf gesucht wird.
+  # Bereits bekannte Projekte werden nicht doppelt bewertet.
+  tage_zurueck_erstlauf: 21
+  tage_zurueck: 4
+  max_detailabrufe: 400     # Schutz vor zu vielen Anfragen pro Lauf
+  pause_sekunden: 0.4       # Höflichkeitspause zwischen Anfragen
+
+foerderung:
+  # typ "rss": jeder Eintrag des Feeds wird einzeln geprüft.
+  # typ "webseite": die Seite wird gelesen. Hat sie sich seit dem letzten Lauf
+  #   verändert, extrahiert das Sprachmodell daraus aktuelle Ausschreibungen.
+  - name: "SNF Ausschreibungen"
+    traeger: "Schweizerischer Nationalfonds (SNF)"
+    typ: rss
+    url: "https://www.snf.ch/api/rss/de/call/feed.xml"
+    ersatz_url: "https://www.snf.ch/api/rss/en/call/feed.xml"
+    info_url: "https://www.snf.ch/de/LlLsqrrZVo4EqWui/seite/laufende-ausschreibungen"
+
+  - name: "Innosuisse News und Calls"
+    traeger: "Innosuisse"
+    typ: webseite
+    url: "https://www.innosuisse.admin.ch/en/news"
+
+  - name: "Innosuisse Flagship Initiative"
+    traeger: "Innosuisse"
+    typ: webseite
+    url: "https://www.innosuisse.admin.ch/de/flagship-initiative"
+
+  - name: "Hasler Stiftung Förderprogramme"
+    traeger: "Hasler Stiftung"
+    typ: webseite
+    url: "https://haslerstiftung.ch/die-fordertatigkeit-der-hasler-stiftung/foerderprogramme/"
+
+  - name: "Gebert Rüf Stiftung Blog"
+    traeger: "Gebert Rüf Stiftung"
+    typ: webseite
+    url: "https://www.grstiftung.ch/en/media/blog.html"
+
+  - name: "Hirschmann Stiftung"
+    traeger: "Hirschmann Stiftung"
+    typ: webseite
+    url: "https://www.hirschmann-stiftung.ch/en/"
+
+  # Die Website der Stiftung Mercator Schweiz benötigt JavaScript und liefert
+  # ohne Browser keinen lesbaren Inhalt. Deshalb vorerst deaktiviert.
+  # Gemeinsame Programme (z. B. Hasler Mercator Digitalization & Democracy)
+  # werden über die Hasler Stiftung erfasst.
+  - name: "Stiftung Mercator Schweiz"
+    traeger: "Stiftung Mercator Schweiz"
+    typ: webseite
+    url: "https://www.stiftung-mercator.ch/"
+    aktiv: false

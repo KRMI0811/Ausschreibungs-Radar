@@ -1,0 +1,151 @@
+# Institutsprofil IOL (OST)
+# Diese Datei steuert, was als "passend" gilt. Sie ist der wichtigste Hebel für
+# die Qualität der Treffer. Pflegen Sie sie gemeinsam im Team.
+
+institut:
+  name: "IOL Institut für Organisation und Leadership, OST Ostschweizer Fachhochschule"
+  kurzbeschreibung: >
+    Angewandte Forschung, Beratung und Weiterbildung zu Führung, Human Resources,
+    Organisationsentwicklung, digitaler Transformation und KI sowie
+    Nachhaltigkeitsmanagement. Typische Leistungen sind Beratungsmandate,
+    Evaluationen, Studien, Befragungen, Workshops, Moderation von
+    Veränderungsprozessen, Weiterbildungen und angewandte Forschungsprojekte.
+  standort: "Ostschweiz (St. Gallen)"
+  bevorzugte_kantone: ["SG", "TG", "AR", "AI", "GR", "ZH", "SH", "GL"]
+
+# Kernthemen mit Suchbegriffen für den Vorfilter.
+# Begriffe werden ohne Gross/Kleinschreibung gesucht, auch als Wortteil
+# ("führung" trifft also auch "Führungsentwicklung").
+kernthemen:
+  Leadership und Führung:
+    - führung
+    - leadership
+    - führungskräfte
+    - kader
+    - coaching
+    - mentoring
+    - management development
+  Human Resources:
+    - personal
+    - human resources
+    - hr-
+    - personalentwicklung
+    - personalauswahl
+    - rekrutierung
+    - assessment
+    - arbeitsgestaltung
+    - arbeitsmodell
+    - work-life
+    - vereinbarkeit
+    - mitarbeitendenbefragung
+    - mitarbeiterbefragung
+    - kompetenzmodell
+    - lohnsystem
+    - gesundheitsmanagement
+    - fachkräfte
+  Organisationsentwicklung:
+    - organisationsentwicklung
+    - organisationsanalyse
+    - organisationsberatung
+    - organisationsmodell
+    - reorganisation
+    - strukturanalyse
+    - aufbauorganisation
+    - prozessanalyse
+    - change management
+    - veränderungsprozess
+    - kulturentwicklung
+    - strategieentwicklung
+    - leitbild
+    - verwaltungsreform
+    - gemeindefusion
+    - zusammenarbeit
+  Digitale Transformation und KI:
+    - digitale transformation
+    - digitalisierung
+    - künstliche intelligenz
+    - " ki "
+    - "ki-"
+    - artificial intelligence
+    - e-government
+    - digitalstrategie
+    - new work
+    - hybride arbeit
+  Nachhaltigkeit und Kreislaufwirtschaft:
+    - nachhaltigkeit
+    - nachhaltigkeitsmanagement
+    - nachhaltigkeitsbericht
+    - kreislaufwirtschaft
+    - circular economy
+    - esg
+    - klimastrategie
+    - umweltmanagement
+
+# Begriffe, die auf eine Beratungs-, Studien- oder Evaluationsleistung hinweisen.
+# Sie erhöhen den Vorfilter-Score leicht, reichen allein aber nicht aus.
+leistungsarten:
+  - beratung
+  - evaluation
+  - studie
+  - analyse
+  - befragung
+  - begleitung
+  - moderation
+  - workshop
+  - weiterbildung
+  - schulung
+  - konzept
+  - grundlagen
+
+# CPV-Codes (EU-Klassifikation), die typisch für IOL-Leistungen sind.
+# Abgleich erfolgt über den Anfang des Codes (Präfix).
+cpv_bonus:
+  "794": "Unternehmens- und Managementberatung"
+  "79315": "Sozialforschung"
+  "79310": "Marktforschung"
+  "731": "Forschung"
+  "730": "Forschung und Entwicklung"
+  "805": "Ausbildung und Schulung"
+  "8053": "Berufsbildung"
+  "79998": "Coaching"
+  "79634": "Berufsberatung"
+  "90713": "Umweltberatung"
+  "7222": "Systemberatung (Digitalisierung)"
+
+# Treffer mit diesen Begriffen im Titel werden aussortiert, auch wenn
+# zufällig ein Kernbegriff vorkommt (z. B. "Personalrestaurant").
+ausschluss_titel:
+  - reinigung
+  - catering
+  - verpflegung
+  - personalrestaurant
+  - personalverleih
+  - temporärpersonal
+  - sicherheitsdienst
+  - bewachung
+  - transport
+  - winterdienst
+  - lieferung
+  - hardware
+  - lizenzen
+  - druck
+  - entsorgung
+  - unterhalt
+  - wartung
+  - bauleitung
+  - ingenieur
+  - planerleistungen
+
+# Typische Auftraggeber (dient dem Sprachmodell als Kontext für die Passung).
+zielgruppen:
+  - KMU
+  - öffentliche Verwaltungen
+  - Gemeinden und Städte
+  - kantonale Ämter und Behörden
+  - Non-Profit-Organisationen
+
+# Schwellenwerte
+schwellen:
+  vorfilter_min: 3        # Mindestpunktzahl, damit ein Treffer ans Sprachmodell geht
+  passung_melden: 60      # ab dieser Passung (0 bis 100) wird ein Treffer gemeldet
+  erinnerung_tage: [14, 7, 3]   # Fristerinnerungen so viele Tage vor Abgabe
