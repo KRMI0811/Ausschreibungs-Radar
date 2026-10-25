@@ -54,7 +54,7 @@
   "71dd45ec-5fc9-4866-ab1d-6c0f79fd9d69": "d538afff-92ed-455f-b429-e734102bc360",
   "e09a5ced-8960-4713-94cf-435249692a16": "f7e55a03-95ca-40d0-a1df-518b96033478",
   "76cc6869-c7c0-4b53-a418-002efec9f376": "fc8effe5-a65e-48e9-9717-6657fc85a155",
-  "da79ecba-85ba-415a-85f0-ee85de9e6efa": "8dba499d-d1c7-4aef-a6bb-fd7783e7efcd",
+  "da79ecba-85ba-415a-85f0-ee85de9e6efa": "b3a76e77-e6b7-4163-9095-c349e2ea2432",
   "4c6fa6a5-5ba0-44a5-ab6c-8deabfea6b3b": "5b09a04b-74b6-4a83-befb-6be77391dd85",
   "f2c6559a-3a2f-4eb2-b988-df004ee4732a": "5d76b953-5fbb-4c2e-bc7c-ca9430916c84",
   "46c2b4ba-392f-4eae-b293-f3005546e1ea": "6d2aa2b5-2fc8-49d9-9467-9479b67392b9",
@@ -562,17 +562,18 @@
   "368652b5-6b90-49b4-9465-d8c872b3c052": "0fbeb7e4-2917-493a-9a3d-8e5918a3fd21",
   "4e6d0431-90a4-4f8a-875c-1ee810e38fb0": "2051e512-37c7-47c8-9d7f-7e3fef7a55d0"
  },
- "simap_letzter_lauf": "2026-10-24T07:41:36+00:00",
+ "simap_letzter_lauf": "2026-10-25T07:43:21+00:00",
  "simap_letzte_statistik": {
-  "treffer": 446,
-  "detailabrufe": 3,
-  "relevant_vorfilter": 0,
+  "treffer": 443,
+  "detailabrufe": 1,
+  "relevant_vorfilter": 1,
   "frist_abgelaufen": 0
  },
  "seiten_hash": {},
- "letzter_lauf": "2026-10-24T07:41:43+00:00",
+ "letzter_lauf": "2026-10-25T07:43:28+00:00",
  "letzte_fehler": [
-  "Innosuisse News und Calls: Anfrage abgelehnt (400). Häufig: Modellname passt nicht zum Anbieter oder Guthaben fehlt.",
+  "Sprachmodell nicht verfügbar: Anfrage abgelehnt (400). Häufig: Modellname passt nicht zum Anbieter oder Guthaben fehlt. Treffer wurden nur nach Stichworten eingeordnet.",
+  "Innosuisse News und Calls: Seite geändert, ohne Sprachmodell keine Auswertung",
   "Innosuisse Flagship Initiative: Seite geändert, ohne Sprachmodell keine Auswertung",
   "Hasler Stiftung Förderprogramme: 403 Client Error: Forbidden for url: https://haslerstiftung.ch/die-fordertatigkeit-der-hasler-stiftung/foerderprogramme/",
   "Gebert Rüf Stiftung Blog: Seite geändert, ohne Sprachmodell keine Auswertung",
