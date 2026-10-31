@@ -233,7 +233,7 @@
   "becfab00-e019-4cab-b3b2-d5f795fb6d51": "c436de58-4567-4f00-a260-1f2003e96804",
   "297d677a-2aa8-4e6f-960f-e9eda8630e0a": "b465594d-bb16-4bca-9f36-4cb878749d20",
   "159874ab-c93f-4a75-b54b-ee4332bdae73": "5f9ccd21-dfb3-49c4-b662-89d73da8331c",
-  "c49a7004-8349-46f8-8a64-003dc1565e62": "f8a3ade7-d27d-4e25-aaba-853bd8af3bc0",
+  "c49a7004-8349-46f8-8a64-003dc1565e62": "ec536be4-9e4f-4fd9-8056-fec1525b171a",
   "0cddacc1-fbb5-43bf-a065-d13b3c9a2091": "677db39d-8f70-420c-9833-f34a4645a543",
   "87bece6e-c4e2-4654-8819-234fdc1a417b": "7ce94424-a0f1-486a-be17-846800ed8891",
   "d2d4fcec-f545-44ac-9ebc-eb0156e53144": "d8682a59-4425-4266-a5ba-2ec5aa8978b3",
@@ -323,7 +323,7 @@
   "83e5ad5c-4281-4699-af92-c879eaf6e1e3": "482979ac-2495-4fee-a3c3-711e87aaf245",
   "91ccf2c1-dd6a-47ca-a353-65449951d750": "c660da71-2e7b-4f70-9fd2-994b0a7c6a1c",
   "798a2c6b-be23-4517-9cf3-eeb0819bd31d": "af6251f1-7a6d-46e4-b605-83806290e318",
-  "901e85f7-3a84-4e03-a4fb-c7029a9968fe": "ce1bfe10-e85a-449d-bfd1-9344dfa688d3",
+  "901e85f7-3a84-4e03-a4fb-c7029a9968fe": "56fae0d9-bb41-4129-85c0-8dfa53f49305",
   "14a6ed29-24a9-4053-aea5-74b2a27616f3": "0ef8b30a-e84c-4ca9-9638-890b0dfd9ee0",
   "5c34e1b4-4712-4d8b-8a71-6da43811d71a": "bc7c7352-6095-404b-ac82-a1f354b4dddb",
   "f70f2de7-f4ba-4eaf-bd56-e4193e1e6956": "9c36f8b9-d12c-4ea1-86c4-5a47267e6595",
@@ -621,17 +621,20 @@
   "6fd0a3b1-b56e-4d82-bad2-7e727d76f6e2": "f500e1aa-b777-407d-84f8-28f8e6fb5d1b",
   "8ad92f96-5266-4742-a509-1f3e19c14b99": "1bc883cf-e456-4583-84e4-64d362df08e7",
   "5a899418-353b-4e54-8669-d42fb5d81b7a": "4bb512d2-7764-44e6-9ac7-c37ab92d2d41",
-  "f0360cae-0e40-420a-a144-119e6be1d2c7": "4f0d6970-bd0c-4c66-903e-488fb654ce00"
+  "f0360cae-0e40-420a-a144-119e6be1d2c7": "4f0d6970-bd0c-4c66-903e-488fb654ce00",
+  "920fd404-49d6-4599-bd92-d92475041903": "141f7f91-25a8-440a-9ed0-908efdd29432",
+  "5b9c418d-5202-4817-a4e9-8b1ad7c18a35": "f304b713-6b08-4a4b-9a22-a459327f5637",
+  "57c0d7cd-68c9-426d-8574-8842a7069864": "a75dd80d-df2c-45be-b046-f93f8264f290"
  },
- "simap_letzter_lauf": "2026-10-30T08:07:32+00:00",
+ "simap_letzter_lauf": "2026-10-31T07:56:57+00:00",
  "simap_letzte_statistik": {
-  "treffer": 446,
-  "detailabrufe": 31,
+  "treffer": 441,
+  "detailabrufe": 5,
   "relevant_vorfilter": 0,
   "frist_abgelaufen": 0
  },
  "seiten_hash": {},
- "letzter_lauf": "2026-10-30T08:07:40+00:00",
+ "letzter_lauf": "2026-10-31T07:57:02+00:00",
  "letzte_fehler": [
   "Innosuisse News und Calls: Anfrage abgelehnt (400). Häufig: Modellname passt nicht zum Anbieter oder Guthaben fehlt.",
   "Innosuisse Flagship Initiative: Seite geändert, ohne Sprachmodell keine Auswertung",
