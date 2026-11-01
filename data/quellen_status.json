@@ -626,15 +626,15 @@
   "5b9c418d-5202-4817-a4e9-8b1ad7c18a35": "f304b713-6b08-4a4b-9a22-a459327f5637",
   "57c0d7cd-68c9-426d-8574-8842a7069864": "a75dd80d-df2c-45be-b046-f93f8264f290"
  },
- "simap_letzter_lauf": "2026-10-31T07:56:57+00:00",
+ "simap_letzter_lauf": "2026-11-01T14:16:43+00:00",
  "simap_letzte_statistik": {
-  "treffer": 441,
-  "detailabrufe": 5,
+  "treffer": 439,
+  "detailabrufe": 0,
   "relevant_vorfilter": 0,
   "frist_abgelaufen": 0
  },
  "seiten_hash": {},
- "letzter_lauf": "2026-10-31T07:57:02+00:00",
+ "letzter_lauf": "2026-11-01T14:16:49+00:00",
  "letzte_fehler": [
   "Innosuisse News und Calls: Anfrage abgelehnt (400). Häufig: Modellname passt nicht zum Anbieter oder Guthaben fehlt.",
   "Innosuisse Flagship Initiative: Seite geändert, ohne Sprachmodell keine Auswertung",
