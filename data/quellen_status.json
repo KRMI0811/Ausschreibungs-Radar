@@ -227,7 +227,7 @@
   "0b2f60e0-fe6c-46f2-b771-87a53ccf1cb3": "64bb4ddf-b6ae-4f29-bb47-310095742610",
   "8e9ec01f-c4cc-4d23-b9e6-bd45da9f7a28": "9d3ca691-1935-4b97-b90f-0b8069d726da",
   "d3239a64-ff48-4e93-9ed7-6132a4f1b255": "33bbef54-0f75-41d1-a0e5-1b02da0eb8e4",
-  "f502972d-76ad-43b1-a3c9-f7d16bbb18f1": "7009cd1a-bbb3-4d5b-a37d-423c99ef520c",
+  "f502972d-76ad-43b1-a3c9-f7d16bbb18f1": "0d51e039-d7de-464f-801d-6a9c0078110e",
   "0edc5ce1-11ce-4886-9161-e746875a26a5": "4baa4740-ced9-4d66-ae9e-a43f5297402c",
   "43fe3b36-f858-48d9-81b3-a21326e0051d": "625d017c-d54c-456f-a729-400a864209ac",
   "becfab00-e019-4cab-b3b2-d5f795fb6d51": "c436de58-4567-4f00-a260-1f2003e96804",
@@ -661,17 +661,24 @@
   "d0eb36fd-eb1b-4023-8ed9-b01690029658": "c176fed7-4464-4d4e-a932-248dfdef3bf6",
   "e80f560a-ad6d-4214-90f1-0d55003aa2c7": "bba33a44-8eb3-43ef-a76c-c11f041c3df3",
   "5fd1d1c7-32ce-47f4-b451-faed4cd41151": "15c7d835-7749-4ef3-b045-068216bf22f1",
-  "61aeda21-643f-45de-9ba0-cd07ec2713df": "7ad803cc-0aac-4a12-8074-270103b9d663"
+  "61aeda21-643f-45de-9ba0-cd07ec2713df": "7ad803cc-0aac-4a12-8074-270103b9d663",
+  "40ac59ac-85b5-4689-bddd-0da85c8613fc": "0f303314-148d-41b6-8b51-9a85e42feeb8",
+  "7937e991-3435-4088-9aae-eab7c2c0b5fd": "63b40db0-3bd6-499c-b255-9c25657f9b84",
+  "bcb410b9-2d98-478c-a7b5-a8b8850cd4db": "cdfd5197-028a-4907-9620-d72e8eecf2a3",
+  "cf37c40c-a8dd-427a-9d94-992178ea3c84": "a03de48d-c0e1-4083-a1dc-1f3b9e394e0d",
+  "4dfa7d00-b9c9-446e-bd79-cafa5011c506": "1b967a90-7cff-4c9f-a6fb-e546a257a947",
+  "283bffa1-d9e2-4512-8c22-f747721cb351": "3fb45c36-addb-4ec1-bb2b-de4aa4dec493",
+  "72d005b5-8ff3-4079-8f25-08d3c21afcdf": "b2d0703c-4bab-4d24-83dc-5db3fbe9dfa2"
  },
- "simap_letzter_lauf": "2026-11-04T15:24:49+00:00",
+ "simap_letzter_lauf": "2026-11-05T15:27:03+00:00",
  "simap_letzte_statistik": {
   "treffer": 437,
-  "detailabrufe": 14,
+  "detailabrufe": 8,
   "relevant_vorfilter": 1,
   "frist_abgelaufen": 0
  },
  "seiten_hash": {},
- "letzter_lauf": "2026-11-04T15:24:56+00:00",
+ "letzter_lauf": "2026-11-05T15:27:08+00:00",
  "letzte_fehler": [
   "Sprachmodell nicht verfügbar: Anfrage abgelehnt (400). Häufig: Modellname passt nicht zum Anbieter oder Guthaben fehlt. Treffer wurden nur nach Stichworten eingeordnet.",
   "Innosuisse News und Calls: Seite geändert, ohne Sprachmodell keine Auswertung",
