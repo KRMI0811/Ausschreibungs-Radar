@@ -708,17 +708,28 @@
   "da4da2f6-f6d9-4a81-bf82-cccdd5e61828": "125eda2d-d7df-4770-96bb-49abb9485a5d",
   "dbbd23ce-7f66-4020-97bb-2f162ece17c6": "a017d5fd-826e-4483-8a12-df8c0f9c2930",
   "9b65f9d7-7f36-4fc1-8de6-9496ab9e8fbf": "026e5c1a-bd5d-497e-8a46-6f8d9cfe607a",
-  "15c5b354-c4f1-42b6-85af-4fb66b6fc811": "7f3740cf-7ed4-427f-b5ec-d719f664713c"
+  "15c5b354-c4f1-42b6-85af-4fb66b6fc811": "7f3740cf-7ed4-427f-b5ec-d719f664713c",
+  "8baa301e-980a-4bda-9744-e0e2244120ca": "ba4e4f74-c705-42f5-aa39-ebe4f85a02c7",
+  "40d79e09-356c-4339-b747-16090b311d3e": "13fbbd66-df34-4f0b-b130-36aa7f838d30",
+  "436dd2d5-f786-4cdf-b488-e89dbe50706b": "f10eea96-1364-4c94-87aa-f2e65b9dce53",
+  "921abcf2-dec4-4932-9364-6903553b8204": "cc5ff62a-95df-471d-a7d6-a181b91e24bc",
+  "7a6fcff8-34c3-49ce-b9d5-22f8bd7385ac": "ec28346b-1dee-425d-ba1e-34c889e3e35e",
+  "c9eb427f-e533-4a80-a6b8-1b7cc6402c72": "354b6812-a945-416e-9580-ac2abfcb8425",
+  "8f104801-df18-4045-8fa8-fd61781f6e38": "ac101ba7-0f3f-4bc1-998c-17d9a7989419",
+  "0b71cccf-9577-47fb-b6ea-4e0772da0b65": "afd99f05-b158-4ea7-bf6e-86b46a97e36a",
+  "487578bd-e90d-49c0-aac6-f0d067379d72": "948ab5ac-660a-400c-950f-baa1a2d8b831",
+  "ee8c6947-bc1d-4d09-a2ab-9e3ac59100d0": "106bc5f2-5cb3-4f2f-af6b-4d326b1f937b",
+  "f9b69206-eec7-4f19-8b27-a04dfd44834e": "c7ba99c9-99df-4da5-9678-5fd5c40b2dec"
  },
- "simap_letzter_lauf": "2026-11-10T15:35:21+00:00",
+ "simap_letzter_lauf": "2026-11-11T15:09:17+00:00",
  "simap_letzte_statistik": {
-  "treffer": 432,
-  "detailabrufe": 12,
+  "treffer": 434,
+  "detailabrufe": 11,
   "relevant_vorfilter": 1,
   "frist_abgelaufen": 0
  },
  "seiten_hash": {},
- "letzter_lauf": "2026-11-10T15:35:26+00:00",
+ "letzter_lauf": "2026-11-11T15:09:24+00:00",
  "letzte_fehler": [
   "Sprachmodell nicht verfügbar: Anfrage abgelehnt (400). Häufig: Modellname passt nicht zum Anbieter oder Guthaben fehlt. Treffer wurden nur nach Stichworten eingeordnet.",
   "Innosuisse News und Calls: Seite geändert, ohne Sprachmodell keine Auswertung",
