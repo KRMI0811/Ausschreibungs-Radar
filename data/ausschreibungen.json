@@ -1,5 +1,301 @@
 [
  {
+  "id": "simap:ac1f9157-bcca-4443-b494-bb03bd8b3fdf",
+  "gefaess": "dienstleistung",
+  "quelle": "simap.ch",
+  "titel": "Externe Dienstleistungen zur Prüfung bei Bau- und  Planungsvorhaben",
+  "auftraggeber": "Abteilung Landschaft und Gewässer (ALG)",
+  "kanton": "AG",
+  "projektnummer": "47519",
+  "publikationsnummer": "47519-01",
+  "publikationsart": "Ausschreibung",
+  "publikationsart_code": "tender",
+  "verfahren": "offenes Verfahren",
+  "auftragsart": "service",
+  "publiziert_am": "2026-11-13",
+  "frist": "2026-12-23T23:59:00+01:00",
+  "frist_quelle": "simap",
+  "fragen_bis": [
+   "2026-11-27"
+  ],
+  "link_quelle": "https://www.simap.ch/de/project-detail/ac1f9157-bcca-4443-b494-bb03bd8b3fdf",
+  "link_organisation": null,
+  "kontakt_email": "nicolas.bircher@ag.ch",
+  "cpv_codes": [
+   "90713000"
+  ],
+  "cpv_labels": [
+   "Beratung in Umweltfragen"
+  ],
+  "lose": [],
+  "text": "Gegenstand des Auftrags ist die Prüfung eingegangener Anfragen, Baugesuche und weiterer\nGeschäfte hinsichtlich natur- und landschaftsschutzrelevanter Belange und die Verfassung entsprechender Stellungnahmen zuhanden der Baubewilligungsbehörde.",
+  "eignungskriterien": [
+   "EK 1: Ressourcen: Genügende Ressourcen der Schlüsselperson für die Auftragserfüllung",
+   "EK 2: Erfahrung der Schlüsselperson: Einschlägige Erfahrungen der Schlüsselperson mit Aufgabenstellungen in der Art des ausgeschriebenen Auftrags."
+  ],
+  "zuschlagskriterien": [
+   "ZK 1: Preis (Gewichtung 40 %) [Preis]: Angebotspreis gemäss Leistungsverzeichnis",
+   "ZK 2: Kompetenz Schlüsselperson (Gewichtung 30 %): Darlegung der Kompetenzen der Schlüsselperson im Hinblick auf den vorliegend ausgeschriebenen Auftrag",
+   "ZK 3: Auftragsverständnis (Gewichtung 30 %): Nachweis des Auftragsverständnisses durch Bearbeitung eines Mustergesuchs"
+  ],
+  "preisgewicht": 40,
+  "kriterien_in_unterlagen": false,
+  "arge_erlaubt": "no",
+  "details_geladen": true,
+  "steckbrief": {
+   "angebotssprachen": [
+    "de"
+   ],
+   "eingabeart": [
+    "offer_specific"
+   ],
+   "dialog": "no",
+   "vertragsbeginn_ende": [
+    "2027-04-01",
+    "2031-03-30"
+   ],
+   "verlaengerung": "no",
+   "optionen": "no",
+   "varianten": "no",
+   "teilangebote": "no",
+   "begehung": "",
+   "angebotsgueltigkeit_tage": 180,
+   "unterlagen_kostenpflichtig": "no",
+   "anzahl_lose": 0,
+   "subunternehmer_erlaubt": "no",
+   "verfahren_code": "open"
+  },
+  "vorfilter_score": 3,
+  "vorfilter_themen": [],
+  "erstmals_gefunden": "2026-11-13T15:21:58+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:58+00:00",
+  "gemeldet": true,
+  "erinnert": [],
+  "gemeldet_am": "2026-11-13T15:22:07+00:00"
+ },
+ {
+  "id": "simap:ce8f1107-7a0e-4104-95ac-122c39e7f54b",
+  "gefaess": "dienstleistung",
+  "quelle": "simap.ch",
+  "titel": "SAP Dienstleistungen S/4 HANA",
+  "auftraggeber": "Flughafen Zürich AG - Zentraler Einkauf",
+  "kanton": "ZH",
+  "projektnummer": "47562",
+  "publikationsnummer": "47562-01",
+  "publikationsart": "Ausschreibung",
+  "publikationsart_code": "tender",
+  "verfahren": "offenes Verfahren",
+  "auftragsart": "service",
+  "publiziert_am": "2026-11-13",
+  "frist": "2027-01-08T12:00:00+01:00",
+  "frist_quelle": "simap",
+  "fragen_bis": [
+   "2026-11-27"
+  ],
+  "link_quelle": "https://www.simap.ch/de/project-detail/ce8f1107-7a0e-4104-95ac-122c39e7f54b",
+  "link_organisation": null,
+  "kontakt_email": "juerg.wolfsteiner@zurich-airport.com",
+  "cpv_codes": [
+   "72260000"
+  ],
+  "cpv_labels": [
+   "Dienstleistungen in Verbindung mit Software"
+  ],
+  "lose": [
+   "Los 1: Finanzen / Record to Report",
+   "Los 2: Logistik / Lead to Cash / Commercial / Acquire to Retire / Source to Pay",
+   "Los 3: Immobilien Lead to Cash / REFX",
+   "Los 4: Versorgungswirtschaft",
+   "Los 5: Personal / Hire to Retire",
+   "Los 6: Identitäts- und Berechtigungsmanagement",
+   "Los 7: Dokumentenmanagement und Archivierung",
+   "Los 8: Plattformbetrieb ",
+   "Los 9: Integration und Entwicklung",
+   "Los 10: Reporting / SAP Analytics und Reporting"
+  ],
+  "text": "Die FZAG betreibt eine umfangreiche SAP- und SAP-nahe Systemlandschaft. Sie unterstützt\nzentrale Geschäftsprozesse in Finanzen, Vertrieb, Beschaffung, Immobilien, Instandhaltung,\nEnergieversorgung, Personal und Reporting.\n\nAb dem 1. Januar 2027 wird SAP S/4HANA 2023 als zentrales ERP-System eingesetzt. Ergänzend\nbetreibt die FZAG unter anderem SAP CRM 7.0, SAP Analytics Cloud, SAP Datasphere, SAP BTP\nIntegration Suite, OpenText-Komponenten und SAP Cloud ALM.\n\nFür Beratung, Weiterentwicklung, Projekte und Support benötigt das SAP Competence Center\n(SAP CC) ergänzend zu den internen Ressourcen externe SAP-Fachpersonen. Mit dieser\nAusschreibung wird dafür eine neue, einheitliche Vertragsgrundlage geschaffen.",
+  "eignungskriterien": [],
+  "zuschlagskriterien": [],
+  "preisgewicht": null,
+  "kriterien_in_unterlagen": false,
+  "arge_erlaubt": "no",
+  "details_geladen": true,
+  "steckbrief": {
+   "angebotssprachen": [
+    "de"
+   ],
+   "eingabeart": [
+    "offer_digital_simap"
+   ],
+   "dialog": "no",
+   "vertragsbeginn_ende": null,
+   "verlaengerung": null,
+   "optionen": null,
+   "varianten": null,
+   "teilangebote": null,
+   "begehung": "keine",
+   "angebotsgueltigkeit_tage": 180,
+   "unterlagen_kostenpflichtig": "no",
+   "anzahl_lose": 10,
+   "subunternehmer_erlaubt": "yes",
+   "verfahren_code": "open"
+  },
+  "vorfilter_score": 4,
+  "vorfilter_themen": [
+   "Human Resources"
+  ],
+  "erstmals_gefunden": "2026-11-13T15:21:50+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:50+00:00",
+  "gemeldet": true,
+  "erinnert": [],
+  "gemeldet_am": "2026-11-13T15:22:07+00:00"
+ },
+ {
+  "id": "simap:2812268e-17d6-49a0-bcfa-0186fecc2ab0",
+  "gefaess": "dienstleistung",
+  "quelle": "simap.ch",
+  "titel": "Rahmenvertragspartner  HR-IT-Weiterentwicklung: Dienstleistungen für SAP SuccessFactors und Fiori, aconso-Cloud und HR-IT-Projektmanagement",
+  "auftraggeber": "Dienststelle Personal",
+  "kanton": "LU",
+  "projektnummer": "42352",
+  "publikationsnummer": "42352-01",
+  "publikationsart": "Ausschreibung",
+  "publikationsart_code": "tender",
+  "verfahren": "offenes Verfahren",
+  "auftragsart": "service",
+  "publiziert_am": "2026-11-13",
+  "frist": "2027-01-06T12:00:00+01:00",
+  "frist_quelle": "simap",
+  "fragen_bis": [
+   "2026-11-25"
+  ],
+  "link_quelle": "https://www.simap.ch/de/project-detail/2812268e-17d6-49a0-bcfa-0186fecc2ab0",
+  "link_organisation": "https://personal.lu.ch",
+  "kontakt_email": "sap.hr@lu.ch",
+  "cpv_codes": [
+   "72000000"
+  ],
+  "cpv_labels": [
+   "IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung"
+  ],
+  "lose": [
+   "Los 1: SAP SuccessFactors, SAP Fiori, Workflow-, Prozess- und BPM-Funktionalitäten",
+   "Los 2: Migration und Implementierung aconso-Cloud",
+   "Los 3: HR-IT-Projektmanagement und HR-IT-Projektleitung"
+  ],
+  "text": "Mit der vorliegenden Ausschreibung werden Rahmenvertragspartnerinnen gesucht, welche die Dienststelle Personal des Kantons Luzern bei der Umsetzung der HR-IT-Roadmap mit spezialisierten Dienstleistungen unterstützen.\nGegenstand der Ausschreibung sind Beratungs-, Konzeptions-, Implementierungs-, Migrations-, Projektleitungs- und Unterstützungsleistungen im Umfeld der HR-IT-Weiterentwicklung. Dabei erfolgt eine Unterteilung des Beratungsbedarfs in folgende Themenbereiche / Lose:\n• Los 1: Dienstleistungen im Umfeld SAP SuccessFactors, SAP Fiori, Workflow-, Prozess- und BPM-Funktionalitäten\n• Los 2: Dienstleistungen im Umfeld Migration und Implementierung aconso-Cloud\n• Los 3: Dienstleistungen für HR-IT-Projektmanagement und HR-IT-Projektleitung",
+  "eignungskriterien": [],
+  "zuschlagskriterien": [],
+  "preisgewicht": null,
+  "kriterien_in_unterlagen": false,
+  "arge_erlaubt": "no",
+  "details_geladen": true,
+  "steckbrief": {
+   "angebotssprachen": [
+    "de"
+   ],
+   "eingabeart": [
+    "offer_digital_simap"
+   ],
+   "dialog": "no",
+   "vertragsbeginn_ende": null,
+   "verlaengerung": null,
+   "optionen": null,
+   "varianten": null,
+   "teilangebote": null,
+   "begehung": "",
+   "angebotsgueltigkeit_tage": 180,
+   "unterlagen_kostenpflichtig": "no",
+   "anzahl_lose": 3,
+   "subunternehmer_erlaubt": "yes",
+   "verfahren_code": "open"
+  },
+  "vorfilter_score": 4,
+  "vorfilter_themen": [
+   "Human Resources"
+  ],
+  "erstmals_gefunden": "2026-11-13T15:21:49+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:49+00:00",
+  "gemeldet": true,
+  "erinnert": [],
+  "gemeldet_am": "2026-11-13T15:22:07+00:00"
+ },
+ {
+  "id": "simap:60d9b89f-dd64-41cd-89ca-3db7c98718ee",
+  "gefaess": "dienstleistung",
+  "quelle": "simap.ch",
+  "titel": "Implementation & Transformation Services",
+  "auftraggeber": "Kanton Zürich Finanzdirektion Amt für Informatik",
+  "kanton": "ZH",
+  "projektnummer": "47128",
+  "publikationsnummer": "47128-01",
+  "publikationsart": "Ausschreibung",
+  "publikationsart_code": "tender",
+  "verfahren": "offenes Verfahren",
+  "auftragsart": "service",
+  "publiziert_am": "2026-11-13",
+  "frist": "2027-01-11T11:00:00+01:00",
+  "frist_quelle": "simap",
+  "fragen_bis": [
+   "2026-11-29"
+  ],
+  "link_quelle": "https://www.simap.ch/de/project-detail/60d9b89f-dd64-41cd-89ca-3db7c98718ee",
+  "link_organisation": null,
+  "kontakt_email": "vergabeverfahren-kdmz@zh.ch",
+  "cpv_codes": [
+   "72000000"
+  ],
+  "cpv_labels": [
+   "IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung"
+  ],
+  "lose": [
+   "Los 1: SAP Finanzen",
+   "Los 2: SAP CM & CX",
+   "Los 3: SAP Forderungsmanagement & Rechnungswesen",
+   "Los 4: SAP H4S4",
+   "Los 5: SAP SF",
+   "Los 6: OpenText Enterprise Content Management (ECM)",
+   "Los 7: Strategie, Architektur & Governance"
+  ],
+  "text": "Die Abteilung Business Solutions im Amt für Informatik verantwortet den Betrieb, den Support, die Weiterentwicklung und die kontinuierliche Optimierung einer vielfältigen Applikationslandschaft. Das Aufgabenspektrum umfasst insbesondere die SAP- und SAP-nahen Anwendungen in den Bereichen Finanzen, Logistik, Immobilien, Kliniken und Personal. Damit stellt die Abteilung den zuverlässigen und bedarfsgerechten Betrieb geschäftskritischer Systeme sicher und unterstützt gleichzeitig deren fachliche und technologische Weiterentwicklung.\n\nNeben der Sicherstellung des laufenden Applikationsbetriebs ist Business Solutions mit einer zunehmenden Anzahl an Transformationsvorhaben sowie Kundenprojekten konfrontiert. Das Kundensegment von Business Solutions reicht von der Staatskanzlei und Direktionen inkl. deren Ämter über Behörden/ Rechtspflege bis hin zu Selbstständigen Anstalten.",
+  "eignungskriterien": [],
+  "zuschlagskriterien": [],
+  "preisgewicht": null,
+  "kriterien_in_unterlagen": false,
+  "arge_erlaubt": "no",
+  "details_geladen": true,
+  "steckbrief": {
+   "angebotssprachen": [
+    "de"
+   ],
+   "eingabeart": [
+    "offer_digital_simap"
+   ],
+   "dialog": "no",
+   "vertragsbeginn_ende": null,
+   "verlaengerung": null,
+   "optionen": null,
+   "varianten": null,
+   "teilangebote": null,
+   "begehung": "",
+   "angebotsgueltigkeit_tage": 180,
+   "unterlagen_kostenpflichtig": "no",
+   "anzahl_lose": 7,
+   "subunternehmer_erlaubt": "yes",
+   "verfahren_code": "open"
+  },
+  "vorfilter_score": 4,
+  "vorfilter_themen": [
+   "Human Resources",
+   "Governance"
+  ],
+  "erstmals_gefunden": "2026-11-13T15:21:48+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
+  "gemeldet": true,
+  "erinnert": [],
+  "gemeldet_am": "2026-11-13T15:22:07+00:00"
+ },
+ {
   "id": "simap:0b71cccf-9577-47fb-b6ea-4e0772da0b65",
   "gefaess": "dienstleistung",
   "quelle": "simap.ch",
@@ -64,7 +360,7 @@
   "vorfilter_score": 3,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-11-11T15:09:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:34+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:01+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-11-11T15:09:24+00:00"
@@ -157,7 +453,7 @@
    "Human Resources"
   ],
   "erstmals_gefunden": "2026-11-10T15:35:14+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-11-10T15:35:26+00:00"
@@ -179,7 +475,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-11-09T17:28:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -266,7 +562,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-11-09T17:28:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-11-09T17:28:24+00:00"
@@ -419,7 +715,7 @@
    "Human Resources"
   ],
   "erstmals_gefunden": "2026-11-04T15:24:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:34+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:01+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-11-04T15:24:56+00:00"
@@ -439,7 +735,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-11-02T17:02:19+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -524,7 +820,7 @@
    "Leadership und Führung"
   ],
   "erstmals_gefunden": "2026-11-02T17:02:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-11-02T17:02:22+00:00"
@@ -684,7 +980,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -703,7 +999,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -722,7 +1018,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -741,7 +1037,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -760,7 +1056,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -779,7 +1075,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:38+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -798,7 +1094,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:38+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -817,7 +1113,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:37+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -836,7 +1132,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:37+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -855,7 +1151,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:37+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -874,7 +1170,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -895,7 +1191,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -914,7 +1210,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -933,7 +1229,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:35+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -952,7 +1248,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:35+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -971,7 +1267,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:35+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -990,7 +1286,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:34+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1009,7 +1305,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:34+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1030,7 +1326,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:33+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1051,7 +1347,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:33+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1070,7 +1366,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:33+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1089,7 +1385,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:32+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1108,7 +1404,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:32+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1127,7 +1423,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:32+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1146,7 +1442,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:31+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1165,7 +1461,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:31+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1184,7 +1480,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:30+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1203,7 +1499,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:30+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1224,7 +1520,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:30+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1243,7 +1539,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:29+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1262,7 +1558,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:29+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1281,7 +1577,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:29+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1300,7 +1596,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:28+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1319,7 +1615,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:28+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1338,7 +1634,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:28+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1357,7 +1653,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:27+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1376,7 +1672,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:27+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1395,7 +1691,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:27+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1414,7 +1710,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:26+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1433,7 +1729,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:26+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1452,7 +1748,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:26+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1471,7 +1767,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:25+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1490,7 +1786,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:25+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1509,7 +1805,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:25+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1530,7 +1826,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:24+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1549,7 +1845,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:24+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1568,7 +1864,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:24+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1589,7 +1885,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:23+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1608,7 +1904,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:23+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1629,7 +1925,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1650,7 +1946,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1669,7 +1965,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1688,7 +1984,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:21+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1707,7 +2003,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:21+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1726,7 +2022,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:21+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1747,7 +2043,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1766,7 +2062,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1785,7 +2081,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1804,7 +2100,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:19+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1825,7 +2121,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:19+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1846,7 +2142,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:19+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1865,7 +2161,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:18+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1884,7 +2180,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:18+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1903,7 +2199,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:17+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1922,7 +2218,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:17+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1941,7 +2237,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:17+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1960,7 +2256,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -1979,7 +2275,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2000,7 +2296,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2019,7 +2315,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2040,7 +2336,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2059,7 +2355,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2078,7 +2374,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:14+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2097,7 +2393,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:14+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2118,7 +2414,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:13+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2137,7 +2433,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:13+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2156,7 +2452,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:13+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2177,7 +2473,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:12+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2198,7 +2494,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2217,7 +2513,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2236,7 +2532,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2255,7 +2551,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:10+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2274,7 +2570,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:10+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2293,7 +2589,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2312,7 +2608,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2331,7 +2627,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2350,7 +2646,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:07+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2369,7 +2665,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:07+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2388,7 +2684,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2407,7 +2703,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2426,7 +2722,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2447,7 +2743,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2466,7 +2762,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:05+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2485,7 +2781,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:05+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2507,7 +2803,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2526,7 +2822,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2547,7 +2843,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2566,7 +2862,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:03+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2587,7 +2883,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:03+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2608,7 +2904,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:03+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2627,7 +2923,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:02+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2646,7 +2942,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:02+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2665,7 +2961,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:01+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2686,7 +2982,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:01+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2705,7 +3001,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:01+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2724,7 +3020,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2743,7 +3039,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:53:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2764,7 +3060,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:53:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2783,7 +3079,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:59+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2802,7 +3098,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:59+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2821,7 +3117,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:59+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2840,7 +3136,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:58+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2861,7 +3157,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:58+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2880,7 +3176,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:57+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2899,7 +3195,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:57+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2918,7 +3214,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:57+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2941,7 +3237,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -2961,7 +3257,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2980,7 +3276,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -2999,7 +3295,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:55+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3018,7 +3314,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:55+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3039,7 +3335,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:55+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3060,7 +3356,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:54+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3081,7 +3377,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:54+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3102,7 +3398,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:53+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3121,7 +3417,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:53+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3140,7 +3436,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:53+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3159,7 +3455,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3178,7 +3474,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3199,7 +3495,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3218,7 +3514,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:51+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3239,7 +3535,7 @@
    "Arbeitsgestaltung und Work-Life-Balance"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:50+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3258,7 +3554,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:50+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3277,7 +3573,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:49+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3296,7 +3592,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:49+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3315,7 +3611,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:48+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3334,7 +3630,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:48+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3353,7 +3649,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3374,7 +3670,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3395,7 +3691,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3414,7 +3710,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:46+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3435,7 +3731,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:46+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3454,7 +3750,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:46+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3475,7 +3771,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:45+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3494,7 +3790,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:45+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3513,7 +3809,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:44+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3532,7 +3828,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3551,7 +3847,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3570,7 +3866,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3589,7 +3885,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:42+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3608,7 +3904,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:42+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3627,7 +3923,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:42+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3646,7 +3942,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:41+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3665,7 +3961,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:41+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3684,7 +3980,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3703,7 +3999,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3722,7 +4018,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3743,7 +4039,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3764,7 +4060,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:38+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3783,7 +4079,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:38+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3802,7 +4098,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:37+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3823,7 +4119,7 @@
    "Governance"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:37+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -3845,7 +4141,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:37+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3864,7 +4160,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3883,7 +4179,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3904,7 +4200,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3923,7 +4219,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:35+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3942,7 +4238,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:35+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3961,7 +4257,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:34+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -3982,7 +4278,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:33+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4003,7 +4299,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:33+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4022,7 +4318,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:32+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4041,7 +4337,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:32+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4060,7 +4356,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:31+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4081,7 +4377,7 @@
    "Governance"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:30+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -4101,7 +4397,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:30+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4120,7 +4416,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:29+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4141,7 +4437,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:29+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4160,7 +4456,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:28+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4179,7 +4475,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:28+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4200,7 +4496,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:27+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4219,7 +4515,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:26+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4240,7 +4536,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:26+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4259,7 +4555,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:25+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4280,7 +4576,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:24+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4299,7 +4595,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4320,7 +4616,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4339,7 +4635,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4358,7 +4654,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:21+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4379,7 +4675,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:21+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4398,7 +4694,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4417,7 +4713,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4436,7 +4732,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4455,7 +4751,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:19+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4474,7 +4770,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:19+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4493,7 +4789,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:19+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4512,7 +4808,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:18+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4533,7 +4829,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:18+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4554,7 +4850,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:18+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4573,7 +4869,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:17+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4592,7 +4888,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:17+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4613,7 +4909,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4632,7 +4928,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4651,7 +4947,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4670,7 +4966,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4691,7 +4987,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4710,7 +5006,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4731,7 +5027,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:14+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4750,7 +5046,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:14+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4769,7 +5065,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:13+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4788,7 +5084,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:13+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4809,7 +5105,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:13+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4828,7 +5124,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:12+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4847,7 +5143,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:12+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4866,7 +5162,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4885,7 +5181,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4904,7 +5200,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4925,7 +5221,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:10+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4944,7 +5240,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:10+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4963,7 +5259,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:10+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -4984,7 +5280,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5003,7 +5299,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5025,7 +5321,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -5045,7 +5341,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:08+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5064,7 +5360,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:08+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5083,7 +5379,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:07+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5102,7 +5398,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:07+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5123,7 +5419,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:07+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5142,7 +5438,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5161,7 +5457,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5180,7 +5476,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5199,7 +5495,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:05+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5218,7 +5514,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:05+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5239,7 +5535,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5258,7 +5554,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5277,7 +5573,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5296,7 +5592,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:03+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5315,7 +5611,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:03+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5334,7 +5630,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:03+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5355,7 +5651,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:02+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5374,7 +5670,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:02+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5395,7 +5691,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:01+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5416,7 +5712,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:01+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5435,7 +5731,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5454,7 +5750,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:52:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5475,7 +5771,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:52:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5497,7 +5793,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:59+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5516,7 +5812,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:59+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5537,7 +5833,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:59+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5556,7 +5852,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:58+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5577,7 +5873,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:58+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5596,7 +5892,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:58+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5617,7 +5913,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:57+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5636,7 +5932,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:57+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5655,7 +5951,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5674,7 +5970,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5693,7 +5989,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5712,7 +6008,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:55+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5731,7 +6027,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:55+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5750,7 +6046,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:55+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5772,7 +6068,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:54+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5793,7 +6089,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:54+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5812,7 +6108,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:53+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5831,7 +6127,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:53+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5850,7 +6146,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5869,7 +6165,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5890,7 +6186,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5909,7 +6205,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5928,7 +6224,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:51+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5949,7 +6245,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:51+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5970,7 +6266,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:51+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -5989,7 +6285,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:50+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6008,7 +6304,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:50+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6029,7 +6325,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:49+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6050,7 +6346,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:49+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6069,7 +6365,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:49+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6088,7 +6384,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:48+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6107,7 +6403,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:48+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6126,7 +6422,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6145,7 +6441,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6164,7 +6460,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6185,7 +6481,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6204,7 +6500,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:46+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6223,7 +6519,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:46+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6242,7 +6538,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:45+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6263,7 +6559,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:45+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6282,7 +6578,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:45+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6301,7 +6597,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:44+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6320,7 +6616,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:44+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6339,7 +6635,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:44+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6360,7 +6656,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6381,7 +6677,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6402,7 +6698,7 @@
    "Human Resources"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6421,7 +6717,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:42+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6442,7 +6738,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:42+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6461,7 +6757,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:41+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6480,7 +6776,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:41+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6501,7 +6797,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:41+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6520,7 +6816,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6539,7 +6835,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6560,7 +6856,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6579,7 +6875,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6598,7 +6894,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6619,7 +6915,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -6641,7 +6937,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6660,7 +6956,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:38+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6681,7 +6977,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:38+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6700,7 +6996,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:38+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6719,7 +7015,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:37+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6738,7 +7034,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:37+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6757,7 +7053,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6778,7 +7074,7 @@
    "Human Resources"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6799,7 +7095,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6820,7 +7116,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6839,7 +7135,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:35+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6860,7 +7156,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:35+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6881,7 +7177,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:35+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6903,7 +7199,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:34+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6924,7 +7220,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:34+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6943,7 +7239,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:34+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6962,7 +7258,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:33+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -6981,7 +7277,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:33+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7000,7 +7296,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:33+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7021,7 +7317,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:32+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7040,7 +7336,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:32+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7061,7 +7357,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:32+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7082,7 +7378,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:31+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7101,7 +7397,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:31+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7120,7 +7416,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:31+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7141,7 +7437,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:30+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7160,7 +7456,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:30+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7179,7 +7475,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:30+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7200,7 +7496,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:29+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7221,7 +7517,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:29+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7240,7 +7536,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:29+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7259,7 +7555,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:29+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7278,7 +7574,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:28+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7300,7 +7596,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:28+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7321,7 +7617,7 @@
    "Human Resources"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:27+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7342,7 +7638,7 @@
    "Arbeitsgestaltung und Work-Life-Balance"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:27+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7361,7 +7657,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:26+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7380,7 +7676,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:26+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7399,7 +7695,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:26+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7418,7 +7714,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:25+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7437,7 +7733,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:25+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7456,7 +7752,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:25+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7477,7 +7773,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:24+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7498,7 +7794,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:24+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7517,7 +7813,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:24+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7539,7 +7835,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:23+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -7559,7 +7855,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:23+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7580,7 +7876,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:23+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7599,7 +7895,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7621,7 +7917,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7642,7 +7938,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -7662,7 +7958,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:22+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7683,7 +7979,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:21+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7702,7 +7998,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:21+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7723,7 +8019,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7744,7 +8040,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7763,7 +8059,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:20+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7785,7 +8081,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:19+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7804,7 +8100,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:19+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7825,7 +8121,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:18+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7844,7 +8140,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:18+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7866,7 +8162,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:18+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7885,7 +8181,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:17+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7904,7 +8200,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:17+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7925,7 +8221,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:17+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7946,7 +8242,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7965,7 +8261,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -7984,7 +8280,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8003,7 +8299,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8024,7 +8320,7 @@
    "Governance"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8046,7 +8342,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:15+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -8069,7 +8365,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:14+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8090,7 +8386,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:14+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8112,7 +8408,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:14+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8131,7 +8427,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:13+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8150,7 +8446,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:13+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8171,7 +8467,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:12+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8190,7 +8486,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:12+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8209,7 +8505,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:12+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8230,7 +8526,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8251,7 +8547,7 @@
    "Human Resources"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8272,7 +8568,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8293,7 +8589,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8314,7 +8610,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:10+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8333,7 +8629,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:10+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8352,7 +8648,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:10+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8371,7 +8667,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8390,7 +8686,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8411,7 +8707,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:09+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8432,7 +8728,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:08+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -8452,7 +8748,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:08+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8474,7 +8770,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:08+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -8494,7 +8790,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:07+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8515,7 +8811,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:07+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8534,7 +8830,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8555,7 +8851,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8576,7 +8872,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:06+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8595,7 +8891,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:05+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8616,7 +8912,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:05+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8637,7 +8933,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:05+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8656,7 +8952,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8677,7 +8973,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8696,7 +8992,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8717,7 +9013,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8738,7 +9034,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:03+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8757,7 +9053,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:03+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8779,7 +9075,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:03+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8800,7 +9096,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:02+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8821,7 +9117,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:02+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8842,7 +9138,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:02+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8861,7 +9157,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:01+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8880,7 +9176,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:51:01+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8901,7 +9197,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8923,7 +9219,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -8945,7 +9241,7 @@
    "Governance"
   ],
   "erstmals_gefunden": "2026-10-20T13:51:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8964,7 +9260,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:59+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -8983,7 +9279,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:59+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9004,7 +9300,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:59+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9023,7 +9319,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:58+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9045,7 +9341,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:58+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9066,7 +9362,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:58+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9087,7 +9383,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:57+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9106,7 +9402,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:57+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9125,7 +9421,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:57+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9146,7 +9442,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9167,7 +9463,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -9187,7 +9483,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9206,7 +9502,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:55+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9227,7 +9523,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:55+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9249,7 +9545,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:55+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -9272,7 +9568,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:54+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -9292,7 +9588,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:54+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9313,7 +9609,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:54+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9334,7 +9630,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:53+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9353,7 +9649,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:53+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9375,7 +9671,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:53+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -9397,7 +9693,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9419,7 +9715,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -9439,7 +9735,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:52+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9458,7 +9754,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:51+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9477,7 +9773,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:51+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9499,7 +9795,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:51+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9518,7 +9814,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:50+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9539,7 +9835,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:49+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9560,7 +9856,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:49+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9581,7 +9877,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:48+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9602,7 +9898,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:48+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9624,7 +9920,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:48+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9645,7 +9941,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9668,7 +9964,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:47+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -9690,7 +9986,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:46+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9711,7 +10007,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:46+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9730,7 +10026,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:45+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9749,7 +10045,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:45+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9770,7 +10066,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:45+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9792,7 +10088,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:44+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -9812,7 +10108,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:44+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9834,7 +10130,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -9854,7 +10150,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9873,7 +10169,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9894,7 +10190,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:41+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9913,7 +10209,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9934,7 +10230,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:40+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9956,7 +10252,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -9976,7 +10272,7 @@
   "vorfilter_score": 0,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -9999,7 +10295,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:38+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -10021,7 +10317,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:38+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -10040,7 +10336,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -10061,7 +10357,7 @@
    "Arbeitsgestaltung und Work-Life-Balance"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:36+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -10083,7 +10379,7 @@
    "Governance"
   ],
   "erstmals_gefunden": "2026-10-20T13:50:35+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -10102,7 +10398,7 @@
   "vorfilter_score": 1,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:50:34+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:36+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:03+00:00",
   "gemeldet": false,
   "erinnert": []
  },
@@ -10185,7 +10481,8 @@
   "gemeldet": true,
   "erinnert": [
    14,
-   7
+   7,
+   3
   ],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
  },
@@ -10346,7 +10643,7 @@
   "vorfilter_score": 4,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:49:43+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:35+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:01+00:00",
   "gemeldet": true,
   "erinnert": [
    3,
@@ -10442,7 +10739,7 @@
   "vorfilter_score": 3,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:48:39+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:35+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:01+00:00",
   "gemeldet": true,
   "erinnert": [
    7,
@@ -10517,7 +10814,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:47:49+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:34+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:01+00:00",
   "gemeldet": true,
   "erinnert": [
    3,
@@ -10660,7 +10957,7 @@
    "Governance"
   ],
   "erstmals_gefunden": "2026-10-20T13:46:56+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:34+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:01+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
@@ -10729,11 +11026,12 @@
    "Human Resources"
   ],
   "erstmals_gefunden": "2026-10-20T13:46:54+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:28+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:50+00:00",
   "gemeldet": true,
   "erinnert": [
    14,
-   7
+   7,
+   3
   ],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
  },
@@ -10803,10 +11101,11 @@
    "Human Resources"
   ],
   "erstmals_gefunden": "2026-10-20T13:46:04+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:28+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:50+00:00",
   "gemeldet": true,
   "erinnert": [
-   14
+   14,
+   7
   ],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
  },
@@ -10900,7 +11199,7 @@
   "vorfilter_score": 4,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:46:02+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:28+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:50+00:00",
   "gemeldet": true,
   "erinnert": [
    14
@@ -10987,7 +11286,7 @@
    "Digitale Transformation und KI"
   ],
   "erstmals_gefunden": "2026-10-20T13:45:58+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:28+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:50+00:00",
   "gemeldet": true,
   "erinnert": [
    14,
@@ -11060,7 +11359,7 @@
    "Governance"
   ],
   "erstmals_gefunden": "2026-10-20T13:45:49+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [
    14,
@@ -11291,7 +11590,7 @@
   "vorfilter_score": 4,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:45:34+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [
    14
@@ -11359,7 +11658,7 @@
   "vorfilter_score": 3,
   "vorfilter_themen": [],
   "erstmals_gefunden": "2026-10-20T13:45:26+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:22:01+00:00",
   "gemeldet": true,
   "erinnert": [
    14,
@@ -11442,7 +11741,7 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:45:24+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [
    14,
@@ -11521,7 +11820,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:45:16+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [
    7,
@@ -11595,7 +11894,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:45:11+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [
    14,
@@ -11611,13 +11910,13 @@
   "auftraggeber": "FINMA Beschaffungs- und Vertragsmanagement BVM",
   "kanton": "BE",
   "projektnummer": "44386",
-  "publikationsnummer": "44386-01",
+  "publikationsnummer": "44386-02",
   "publikationsart": "Ausschreibung",
   "publikationsart_code": "tender",
   "verfahren": "offenes Verfahren",
   "auftragsart": "service",
-  "publiziert_am": "2026-10-09",
-  "frist": "2026-11-23T23:59:00+01:00",
+  "publiziert_am": "2026-11-13",
+  "frist": "2026-11-30T23:59:00+01:00",
   "frist_quelle": "simap",
   "fragen_bis": [
    "2026-11-09"
@@ -11673,12 +11972,11 @@
    "Organisationsentwicklung"
   ],
   "erstmals_gefunden": "2026-10-20T13:45:01+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:47+00:00",
   "gemeldet": true,
   "erinnert": [
    14
-  ],
-  "gemeldet_am": "2026-10-20T13:53:45+00:00"
+  ]
  },
  {
   "id": "simap:638d110d-39c7-4be3-9eb4-7d7c0dec207f",
@@ -11748,7 +12046,7 @@
    "Leadership und Führung"
   ],
   "erstmals_gefunden": "2026-10-20T13:45:00+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [
    14,
@@ -11830,7 +12128,7 @@
    "Nachhaltigkeit und Kreislaufwirtschaft"
   ],
   "erstmals_gefunden": "2026-10-20T13:44:48+00:00",
-  "zuletzt_gesehen": "2026-11-12T15:58:26+00:00",
+  "zuletzt_gesehen": "2026-11-13T15:21:48+00:00",
   "gemeldet": true,
   "erinnert": [],
   "gemeldet_am": "2026-10-20T13:53:45+00:00"
