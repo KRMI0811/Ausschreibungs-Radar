@@ -752,19 +752,27 @@
   "585e822f-9b65-455c-bea2-1a11174901b2": "353ce954-b924-4282-8b10-e88e2da0a1af",
   "91bc013f-9886-4e32-b287-b26e54c01129": "0850e60b-0e66-4b70-8854-26be75cc6dcc",
   "92225684-cfa4-43fb-8d00-5f5dd40a65a6": "c10d39e8-f0e7-4811-9308-67a8811cdd00",
-  "12f3aa79-f317-456e-bcf2-2ad44dbd6bb7": "980c44ff-3a6e-43a1-a761-5db1659c0cbe"
+  "12f3aa79-f317-456e-bcf2-2ad44dbd6bb7": "980c44ff-3a6e-43a1-a761-5db1659c0cbe",
+  "5f732b33-8ad6-420a-8dc0-d987fa4166ca": "2157d01c-7bb9-43be-9840-10f2ab00fda1",
+  "cde19a8a-00fe-4f5c-a677-d950e2773723": "d03c2c11-630a-41a8-8715-7d0a6885abe4",
+  "d55d3839-a8e0-4a63-9eb5-d4f26d3d1200": "45525d86-f9ef-46f5-beb7-cba6eb5c479b",
+  "8f218b24-bf28-488c-93df-e38c4581c268": "47da1e86-ea8b-4e6b-b098-b2825380735c",
+  "e9986df9-4d71-42e2-a0df-9ffd0146fcdd": "01f55438-c247-41ff-b4ea-7c6970634ccb",
+  "bbc85d6b-cb41-4048-936d-ee54e244c958": "b7d787dc-ae7e-4197-8a3d-a36512de615f",
+  "e29f1e14-48fb-4813-a434-e0510244f3cd": "ccb13182-9661-412c-8813-6eb92e62aeab"
  },
- "simap_letzter_lauf": "2026-11-15T14:44:16+00:00",
+ "simap_letzter_lauf": "2026-11-16T16:59:38+00:00",
  "simap_letzte_statistik": {
   "treffer": 433,
-  "detailabrufe": 0,
-  "relevant_vorfilter": 0,
+  "detailabrufe": 7,
+  "relevant_vorfilter": 1,
   "frist_abgelaufen": 0
  },
  "seiten_hash": {},
- "letzter_lauf": "2026-11-15T14:44:21+00:00",
+ "letzter_lauf": "2026-11-16T16:59:43+00:00",
  "letzte_fehler": [
-  "Innosuisse News und Calls: Anfrage abgelehnt (400). Häufig: Modellname passt nicht zum Anbieter oder Guthaben fehlt.",
+  "Sprachmodell nicht verfügbar: Anfrage abgelehnt (400). Häufig: Modellname passt nicht zum Anbieter oder Guthaben fehlt. Treffer wurden nur nach Stichworten eingeordnet.",
+  "Innosuisse News und Calls: Seite geändert, ohne Sprachmodell keine Auswertung",
   "Innosuisse Flagship Initiative: Seite geändert, ohne Sprachmodell keine Auswertung",
   "Hasler Stiftung Förderprogramme: 403 Client Error: Forbidden for url: https://haslerstiftung.ch/die-fordertatigkeit-der-hasler-stiftung/foerderprogramme/",
   "Gebert Rüf Stiftung Blog: Seite geändert, ohne Sprachmodell keine Auswertung",
