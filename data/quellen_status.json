@@ -812,15 +812,15 @@
   "3b984400-fa08-4ea3-a04c-ffe791efe720": "dfc52c57-92c7-48c6-bac0-8870101fe860",
   "46a0be4f-7007-44f6-95d0-ed69813d3205": "b4ca331f-8efa-4ddf-b212-95f80a14b149"
  },
- "simap_letzter_lauf": "2026-11-21T15:20:27+00:00",
+ "simap_letzter_lauf": "2026-11-22T15:16:39+00:00",
  "simap_letzte_statistik": {
   "treffer": 423,
-  "detailabrufe": 4,
+  "detailabrufe": 0,
   "relevant_vorfilter": 0,
   "frist_abgelaufen": 0
  },
  "seiten_hash": {},
- "letzter_lauf": "2026-11-21T15:20:35+00:00",
+ "letzter_lauf": "2026-11-22T15:16:45+00:00",
  "letzte_fehler": [
   "Innosuisse News und Calls: Schlüssel ungültig (401). Bitte LLM_API_KEY prüfen.",
   "Innosuisse Flagship Initiative: Seite geändert, ohne Sprachmodell keine Auswertung",
